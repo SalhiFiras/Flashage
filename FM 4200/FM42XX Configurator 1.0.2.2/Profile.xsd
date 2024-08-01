@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Profile" targetNamespace="http://teltonika.com/GpsConfigurator/Profile" xmlns:mstns="http://teltonika.com/GpsConfigurator/Profile" xmlns="http://teltonika.com/GpsConfigurator/Profile" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Profile" msdata:IsDataSet="true" msdata:Locale="" msprop:Generator_UserDSName="Profile" msprop:Generator_DataSetName="Profile">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Profile" msprop:Generator_UserTableName="Profile" msprop:Generator_RowDeletedName="ProfileRowDeleted" msprop:Generator_RowChangedName="ProfileRowChanged" msprop:Generator_RowClassName="ProfileRow" msprop:Generator_RowChangingName="ProfileRowChanging" msprop:Generator_RowEvArgName="ProfileRowChangeEvent" msprop:Generator_RowEvHandlerName="ProfileRowChangeEventHandler" msprop:Generator_TableClassName="ProfileDataTable" msprop:Generator_TableVarName="tableProfile" msprop:Generator_RowDeletingName="ProfileRowDeleting" msprop:Generator_TablePropName="_Profile">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Version" msprop:Generator_UserColumnName="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_ColumnPropNameInTable="VersionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Baudrate" msprop:Generator_UserColumnName="Baudrate" msprop:Generator_ColumnPropNameInRow="Baudrate" msprop:Generator_ColumnVarNameInTable="columnBaudrate" msprop:Generator_ColumnPropNameInTable="BaudrateColumn" type="xs:int" default="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sys" msprop:Generator_UserTableName="Sys" msprop:Generator_RowDeletedName="SysRowDeleted" msprop:Generator_RowChangedName="SysRowChanged" msprop:Generator_RowClassName="SysRow" msprop:Generator_RowChangingName="SysRowChanging" msprop:Generator_RowEvArgName="SysRowChangeEvent" msprop:Generator_RowEvHandlerName="SysRowChangeEventHandler" msprop:Generator_TableClassName="SysDataTable" msprop:Generator_TableVarName="tableSys" msprop:Generator_RowDeletingName="SysRowDeleting" msprop:Generator_TablePropName="Sys">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="PowerMode" msprop:Generator_UserColumnName="PowerMode" msprop:Generator_ColumnPropNameInRow="PowerMode" msprop:Generator_ColumnVarNameInTable="columnPowerMode" msprop:Generator_ColumnPropNameInTable="PowerModeColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Gps" msprop:Generator_UserTableName="Gps" msprop:Generator_RowDeletedName="GpsRowDeleted" msprop:Generator_RowChangedName="GpsRowChanged" msprop:Generator_RowClassName="GpsRow" msprop:Generator_RowChangingName="GpsRowChanging" msprop:Generator_RowEvArgName="GpsRowChangeEvent" msprop:Generator_RowEvHandlerName="GpsRowChangeEventHandler" msprop:Generator_TableClassName="GpsDataTable" msprop:Generator_TableVarName="tableGps" msprop:Generator_RowDeletingName="GpsRowDeleting" msprop:Generator_TablePropName="Gps">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Enable" msprop:Generator_UserColumnName="Enable" msprop:Generator_ColumnVarNameInTable="columnEnable" msprop:Generator_ColumnPropNameInRow="Enable" msprop:Generator_ColumnPropNameInTable="EnableColumn" type="xs:boolean" />
+              <xs:element name="MinPeriod" msprop:Generator_UserColumnName="MinPeriod" msprop:Generator_ColumnVarNameInTable="columnMinPeriod" msprop:Generator_ColumnPropNameInRow="MinPeriod" msprop:Generator_ColumnPropNameInTable="MinPeriodColumn" type="xs:unsignedInt" />
+              <xs:element name="MinDist" msprop:Generator_UserColumnName="MinDist" msprop:Generator_ColumnVarNameInTable="columnMinDist" msprop:Generator_ColumnPropNameInRow="MinDist" msprop:Generator_ColumnPropNameInTable="MinDistColumn" type="xs:unsignedShort" />
+              <xs:element name="MinAngle" msprop:Generator_UserColumnName="MinAngle" msprop:Generator_ColumnVarNameInTable="columnMinAngle" msprop:Generator_ColumnPropNameInRow="MinAngle" msprop:Generator_ColumnPropNameInTable="MinAngleColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Geofence" msprop:Generator_UserTableName="Geofence" msprop:Generator_RowDeletedName="GeofenceRowDeleted" msprop:Generator_RowChangedName="GeofenceRowChanged" msprop:Generator_RowClassName="GeofenceRow" msprop:Generator_RowChangingName="GeofenceRowChanging" msprop:Generator_RowEvArgName="GeofenceRowChangeEvent" msprop:Generator_RowEvHandlerName="GeofenceRowChangeEventHandler" msprop:Generator_TableClassName="GeofenceDataTable" msprop:Generator_TableVarName="tableGeofence" msprop:Generator_RowDeletingName="GeofenceRowDeleting" msprop:Generator_TablePropName="Geofence">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GeofenceId" msprop:Generator_UserColumnName="GeofenceId" msprop:Generator_ColumnVarNameInTable="columnGeofenceId" msprop:Generator_ColumnPropNameInRow="GeofenceId" msprop:Generator_ColumnPropNameInTable="GeofenceIdColumn" type="xs:short" />
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="FrameBorderSize" msprop:Generator_UserColumnName="FrameBorderSize" msprop:Generator_ColumnVarNameInTable="columnFrameBorderSize" msprop:Generator_ColumnPropNameInRow="FrameBorderSize" msprop:Generator_ColumnPropNameInTable="FrameBorderSizeColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Frame" msprop:Generator_UserTableName="Frame" msprop:Generator_RowDeletedName="FrameRowDeleted" msprop:Generator_RowChangedName="FrameRowChanged" msprop:Generator_RowClassName="FrameRow" msprop:Generator_RowChangingName="FrameRowChanging" msprop:Generator_RowEvArgName="FrameRowChangeEvent" msprop:Generator_RowEvHandlerName="FrameRowChangeEventHandler" msprop:Generator_TableClassName="FrameDataTable" msprop:Generator_TableVarName="tableFrame" msprop:Generator_RowDeletingName="FrameRowDeleting" msprop:Generator_TablePropName="Frame">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FrameId" msprop:Generator_UserColumnName="FrameId" msprop:Generator_ColumnVarNameInTable="columnFrameId" msprop:Generator_ColumnPropNameInRow="FrameId" msprop:Generator_ColumnPropNameInTable="FrameIdColumn" type="xs:short" />
+              <xs:element name="GeofenceId" msprop:Generator_UserColumnName="GeofenceId" msprop:Generator_ColumnVarNameInTable="columnGeofenceId" msprop:Generator_ColumnPropNameInRow="GeofenceId" msprop:Generator_ColumnPropNameInTable="GeofenceIdColumn" type="xs:short" />
+              <xs:element name="FrameType" msprop:Generator_UserColumnName="FrameType" msprop:Generator_ColumnVarNameInTable="columnFrameType" msprop:Generator_ColumnPropNameInRow="FrameType" msprop:Generator_ColumnPropNameInTable="FrameTypeColumn" type="xs:unsignedByte" />
+              <xs:element name="X1" msprop:Generator_UserColumnName="X1" msprop:Generator_ColumnVarNameInTable="columnX1" msprop:Generator_ColumnPropNameInRow="X1" msprop:Generator_ColumnPropNameInTable="X1Column" type="xs:double" />
+              <xs:element name="Y1" msprop:Generator_UserColumnName="Y1" msprop:Generator_ColumnVarNameInTable="columnY1" msprop:Generator_ColumnPropNameInRow="Y1" msprop:Generator_ColumnPropNameInTable="Y1Column" type="xs:double" />
+              <xs:element name="X2" msprop:Generator_UserColumnName="X2" msprop:Generator_ColumnVarNameInTable="columnX2" msprop:Generator_ColumnPropNameInRow="X2" msprop:Generator_ColumnPropNameInTable="X2Column" type="xs:double" />
+              <xs:element name="Y2" msprop:Generator_UserColumnName="Y2" msprop:Generator_ColumnVarNameInTable="columnY2" msprop:Generator_ColumnPropNameInRow="Y2" msprop:Generator_ColumnPropNameInTable="Y2Column" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Gsm" msprop:Generator_UserTableName="Gsm" msprop:Generator_RowDeletedName="GsmRowDeleted" msprop:Generator_RowChangedName="GsmRowChanged" msprop:Generator_RowClassName="GsmRow" msprop:Generator_RowChangingName="GsmRowChanging" msprop:Generator_RowEvArgName="GsmRowChangeEvent" msprop:Generator_RowEvHandlerName="GsmRowChangeEventHandler" msprop:Generator_TableClassName="GsmDataTable" msprop:Generator_TableVarName="tableGsm" msprop:Generator_RowDeletingName="GsmRowDeleting" msprop:Generator_TablePropName="Gsm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="AnswerAuto" msprop:Generator_UserColumnName="AnswerAuto" msprop:Generator_ColumnVarNameInTable="columnAnswerAuto" msprop:Generator_ColumnPropNameInRow="AnswerAuto" msprop:Generator_ColumnPropNameInTable="AnswerAutoColumn" type="xs:unsignedByte" />
+              <xs:element name="TransferProtocol" msprop:Generator_UserColumnName="TransferProtocol" msprop:Generator_ColumnVarNameInTable="columnTransferProtocol" msprop:Generator_ColumnPropNameInRow="TransferProtocol" msprop:Generator_ColumnPropNameInTable="TransferProtocolColumn" type="xs:unsignedByte" />
+              <xs:element name="MinSavedRecords" msprop:Generator_UserColumnName="MinSavedRecords" msprop:Generator_ColumnPropNameInRow="MinSavedRecords" msprop:Generator_ColumnVarNameInTable="columnMinSavedRecords" msprop:Generator_ColumnPropNameInTable="MinSavedRecordsColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Gprs" msprop:Generator_UserTableName="Gprs" msprop:Generator_RowDeletedName="GprsRowDeleted" msprop:Generator_RowChangedName="GprsRowChanged" msprop:Generator_RowClassName="GprsRow" msprop:Generator_RowChangingName="GprsRowChanging" msprop:Generator_RowEvArgName="GprsRowChangeEvent" msprop:Generator_RowEvHandlerName="GprsRowChangeEventHandler" msprop:Generator_TableClassName="GprsDataTable" msprop:Generator_TableVarName="tableGprs" msprop:Generator_RowDeletingName="GprsRowDeleting" msprop:Generator_TablePropName="Gprs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Enable" msprop:Generator_UserColumnName="Enable" msprop:Generator_ColumnVarNameInTable="columnEnable" msprop:Generator_ColumnPropNameInRow="Enable" msprop:Generator_ColumnPropNameInTable="EnableColumn" type="xs:boolean" />
+              <xs:element name="DialNumber" msprop:Generator_UserColumnName="DialNumber" msprop:Generator_ColumnVarNameInTable="columnDialNumber" msprop:Generator_ColumnPropNameInRow="DialNumber" msprop:Generator_ColumnPropNameInTable="DialNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Apn" msprop:Generator_UserColumnName="Apn" msprop:Generator_ColumnVarNameInTable="columnApn" msprop:Generator_ColumnPropNameInRow="Apn" msprop:Generator_ColumnPropNameInTable="ApnColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ip" msprop:Generator_UserColumnName="Ip" msprop:Generator_ColumnVarNameInTable="columnIp" msprop:Generator_ColumnPropNameInRow="Ip" msprop:Generator_ColumnPropNameInTable="IpColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Port" msprop:Generator_UserColumnName="Port" msprop:Generator_ColumnVarNameInTable="columnPort" msprop:Generator_ColumnPropNameInRow="Port" msprop:Generator_ColumnPropNameInTable="PortColumn" type="xs:unsignedShort" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sms" msprop:Generator_UserTableName="Sms" msprop:Generator_RowDeletedName="SmsRowDeleted" msprop:Generator_RowChangedName="SmsRowChanged" msprop:Generator_RowClassName="SmsRow" msprop:Generator_RowChangingName="SmsRowChanging" msprop:Generator_RowEvArgName="SmsRowChangeEvent" msprop:Generator_RowEvHandlerName="SmsRowChangeEventHandler" msprop:Generator_TableClassName="SmsDataTable" msprop:Generator_TableVarName="tableSms" msprop:Generator_RowDeletingName="SmsRowDeleting" msprop:Generator_TablePropName="Sms">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Enable" msprop:Generator_UserColumnName="Enable" msprop:Generator_ColumnVarNameInTable="columnEnable" msprop:Generator_ColumnPropNameInRow="Enable" msprop:Generator_ColumnPropNameInTable="EnableColumn" type="xs:boolean" />
+              <xs:element name="Timeout" msprop:Generator_UserColumnName="Timeout" msprop:Generator_ColumnVarNameInTable="columnTimeout" msprop:Generator_ColumnPropNameInRow="Timeout" msprop:Generator_ColumnPropNameInTable="TimeoutColumn" type="xs:int" />
+              <xs:element name="Login" msprop:Generator_UserColumnName="Login" msprop:Generator_ColumnPropNameInRow="Login" msprop:Generator_ColumnVarNameInTable="columnLogin" msprop:Generator_ColumnPropNameInTable="LoginColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInTable="PasswordColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Securenum" msprop:Generator_UserTableName="Securenum" msprop:Generator_RowDeletedName="SecurenumRowDeleted" msprop:Generator_RowChangedName="SecurenumRowChanged" msprop:Generator_RowClassName="SecurenumRow" msprop:Generator_RowChangingName="SecurenumRowChanging" msprop:Generator_RowEvArgName="SecurenumRowChangeEvent" msprop:Generator_RowEvHandlerName="SecurenumRowChangeEventHandler" msprop:Generator_TableClassName="SecurenumDataTable" msprop:Generator_TableVarName="tableSecurenum" msprop:Generator_RowDeletingName="SecurenumRowDeleting" msprop:Generator_TablePropName="Securenum">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Num" msprop:Generator_UserColumnName="Num" msprop:Generator_ColumnVarNameInTable="columnNum" msprop:Generator_ColumnPropNameInRow="Num" msprop:Generator_ColumnPropNameInTable="NumColumn" type="xs:short" />
+              <xs:element name="ServerNumId" msprop:Generator_UserColumnName="ServerNumId" msprop:Generator_ColumnVarNameInTable="columnServerNumId" msprop:Generator_ColumnPropNameInRow="ServerNumId" msprop:Generator_ColumnPropNameInTable="ServerNumIdColumn" type="xs:short" />
+              <xs:element name="SecureNum" msprop:Generator_UserColumnName="SecureNum" msprop:Generator_ColumnVarNameInTable="columnSecureNum" msprop:Generator_ColumnPropNameInRow="SecureNum" msprop:Generator_ColumnPropNameInTable="SecureNumColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Operator" msprop:Generator_UserTableName="Operator" msprop:Generator_RowDeletedName="OperatorRowDeleted" msprop:Generator_RowChangedName="OperatorRowChanged" msprop:Generator_RowClassName="OperatorRow" msprop:Generator_RowChangingName="OperatorRowChanging" msprop:Generator_RowEvArgName="OperatorRowChangeEvent" msprop:Generator_RowEvHandlerName="OperatorRowChangeEventHandler" msprop:Generator_TableClassName="OperatorDataTable" msprop:Generator_TableVarName="tableOperator" msprop:Generator_RowDeletingName="OperatorRowDeleting" msprop:Generator_TablePropName="Operator">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="SendPeriod" msprop:Generator_UserColumnName="SendPeriod" msprop:Generator_ColumnVarNameInTable="columnSendPeriod" msprop:Generator_ColumnPropNameInRow="SendPeriod" msprop:Generator_ColumnPropNameInTable="SendPeriodColumn" type="xs:long" />
+              <xs:element name="TimeStep" msprop:Generator_UserColumnName="TimeStep" msprop:Generator_ColumnVarNameInTable="columnTimeStep" msprop:Generator_ColumnPropNameInRow="TimeStep" msprop:Generator_ColumnPropNameInTable="TimeStepColumn" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OperatorCode" msprop:Generator_UserTableName="OperatorCode" msprop:Generator_RowDeletedName="OperatorCodeRowDeleted" msprop:Generator_RowChangedName="OperatorCodeRowChanged" msprop:Generator_RowClassName="OperatorCodeRow" msprop:Generator_RowChangingName="OperatorCodeRowChanging" msprop:Generator_RowEvArgName="OperatorCodeRowChangeEvent" msprop:Generator_RowEvHandlerName="OperatorCodeRowChangeEventHandler" msprop:Generator_TableClassName="OperatorCodeDataTable" msprop:Generator_TableVarName="tableOperatorCode" msprop:Generator_RowDeletingName="OperatorCodeRowDeleting" msprop:Generator_TablePropName="OperatorCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OperatorCodeId" msprop:Generator_UserColumnName="OperatorCodeId" msprop:Generator_ColumnVarNameInTable="columnOperatorCodeId" msprop:Generator_ColumnPropNameInRow="OperatorCodeId" msprop:Generator_ColumnPropNameInTable="OperatorCodeIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Accelerometer" msprop:Generator_UserTableName="Accelerometer" msprop:Generator_RowDeletedName="AccelerometerRowDeleted" msprop:Generator_RowChangedName="AccelerometerRowChanged" msprop:Generator_RowClassName="AccelerometerRow" msprop:Generator_RowChangingName="AccelerometerRowChanging" msprop:Generator_RowEvArgName="AccelerometerRowChangeEvent" msprop:Generator_RowEvHandlerName="AccelerometerRowChangeEventHandler" msprop:Generator_TableClassName="AccelerometerDataTable" msprop:Generator_TableVarName="tableAccelerometer" msprop:Generator_RowDeletingName="AccelerometerRowDeleting" msprop:Generator_TablePropName="Accelerometer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Enable" msprop:Generator_UserColumnName="Enable" msprop:Generator_ColumnVarNameInTable="columnEnable" msprop:Generator_ColumnPropNameInRow="Enable" msprop:Generator_ColumnPropNameInTable="EnableColumn" type="xs:boolean" />
+              <xs:element name="LevelX" msprop:Generator_UserColumnName="LevelX" msprop:Generator_ColumnVarNameInTable="columnLevelX" msprop:Generator_ColumnPropNameInRow="LevelX" msprop:Generator_ColumnPropNameInTable="LevelXColumn" type="xs:int" />
+              <xs:element name="LevelY" msprop:Generator_UserColumnName="LevelY" msprop:Generator_ColumnVarNameInTable="columnLevelY" msprop:Generator_ColumnPropNameInRow="LevelY" msprop:Generator_ColumnPropNameInTable="LevelYColumn" type="xs:int" />
+              <xs:element name="LevelZ" msprop:Generator_UserColumnName="LevelZ" msprop:Generator_ColumnVarNameInTable="columnLevelZ" msprop:Generator_ColumnPropNameInRow="LevelZ" msprop:Generator_ColumnPropNameInTable="LevelZColumn" type="xs:int" />
+              <xs:element name="Par1" msprop:Generator_UserColumnName="Par1" msprop:Generator_ColumnVarNameInTable="columnPar1" msprop:Generator_ColumnPropNameInRow="Par1" msprop:Generator_ColumnPropNameInTable="Par1Column" type="xs:int" />
+              <xs:element name="Par2" msprop:Generator_UserColumnName="Par2" msprop:Generator_ColumnVarNameInTable="columnPar2" msprop:Generator_ColumnPropNameInRow="Par2" msprop:Generator_ColumnPropNameInTable="Par2Column" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IO" msprop:Generator_UserTableName="IO" msprop:Generator_RowDeletedName="IORowDeleted" msprop:Generator_RowChangedName="IORowChanged" msprop:Generator_RowClassName="IORow" msprop:Generator_RowChangingName="IORowChanging" msprop:Generator_RowEvArgName="IORowChangeEvent" msprop:Generator_RowEvHandlerName="IORowChangeEventHandler" msprop:Generator_TableClassName="IODataTable" msprop:Generator_TableVarName="tableIO" msprop:Generator_RowDeletingName="IORowDeleting" msprop:Generator_TablePropName="IO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IOId" msprop:Generator_UserColumnName="IOId" msprop:Generator_ColumnVarNameInTable="columnIOId" msprop:Generator_ColumnPropNameInRow="IOId" msprop:Generator_ColumnPropNameInTable="IOIdColumn" type="xs:short" />
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="Enable" msprop:Generator_UserColumnName="Enable" msprop:Generator_ColumnVarNameInTable="columnEnable" msprop:Generator_ColumnPropNameInRow="Enable" msprop:Generator_ColumnPropNameInTable="EnableColumn" type="xs:unsignedByte" />
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:unsignedByte" />
+              <xs:element name="HighLevel" msprop:Generator_UserColumnName="HighLevel" msprop:Generator_ColumnVarNameInTable="columnHighLevel" msprop:Generator_ColumnPropNameInRow="HighLevel" msprop:Generator_ColumnPropNameInTable="HighLevelColumn" type="xs:int" />
+              <xs:element name="LowLevel" msprop:Generator_UserColumnName="LowLevel" msprop:Generator_ColumnVarNameInTable="columnLowLevel" msprop:Generator_ColumnPropNameInRow="LowLevel" msprop:Generator_ColumnPropNameInTable="LowLevelColumn" type="xs:int" />
+              <xs:element name="Operand" msprop:Generator_UserColumnName="Operand" msprop:Generator_ColumnVarNameInTable="columnOperand" msprop:Generator_ColumnPropNameInRow="Operand" msprop:Generator_ColumnPropNameInTable="OperandColumn" type="xs:unsignedByte" />
+              <xs:element name="AvgCounter" msprop:Generator_UserColumnName="AvgCounter" msprop:Generator_ColumnVarNameInTable="columnAvgCounter" msprop:Generator_ColumnPropNameInRow="AvgCounter" msprop:Generator_ColumnPropNameInTable="AvgCounterColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ServerNum" msprop:Generator_UserTableName="ServerNum" msprop:Generator_RowDeletedName="ServerNumRowDeleted" msprop:Generator_RowChangedName="ServerNumRowChanged" msprop:Generator_RowClassName="ServerNumRow" msprop:Generator_RowChangingName="ServerNumRowChanging" msprop:Generator_RowEvArgName="ServerNumRowChangeEvent" msprop:Generator_RowEvHandlerName="ServerNumRowChangeEventHandler" msprop:Generator_TableClassName="ServerNumDataTable" msprop:Generator_TableVarName="tableServerNum" msprop:Generator_RowDeletingName="ServerNumRowDeleting" msprop:Generator_TablePropName="ServerNum">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="ServerNumId" msprop:Generator_UserColumnName="ServerNumId" msprop:Generator_ColumnVarNameInTable="columnServerNumId" msprop:Generator_ColumnPropNameInRow="ServerNumId" msprop:Generator_ColumnPropNameInTable="ServerNumIdColumn" type="xs:short" />
+              <xs:element name="ServerPhoneNum" msprop:Generator_UserColumnName="ServerPhoneNum" msprop:Generator_ColumnVarNameInTable="columnServerPhoneNum" msprop:Generator_ColumnPropNameInRow="ServerPhoneNum" msprop:Generator_ColumnPropNameInTable="ServerPhoneNumColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CANConfig" msprop:Generator_UserTableName="CANConfig" msprop:Generator_RowDeletedName="CANConfigRowDeleted" msprop:Generator_RowChangedName="CANConfigRowChanged" msprop:Generator_RowClassName="CANConfigRow" msprop:Generator_RowChangingName="CANConfigRowChanging" msprop:Generator_RowEvArgName="CANConfigRowChangeEvent" msprop:Generator_RowEvHandlerName="CANConfigRowChangeEventHandler" msprop:Generator_TableClassName="CANConfigDataTable" msprop:Generator_TableVarName="tableCANConfig" msprop:Generator_RowDeletingName="CANConfigRowDeleting" msprop:Generator_TablePropName="CANConfig">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CANConfigId" msprop:Generator_UserColumnName="CANConfigId" msprop:Generator_ColumnPropNameInRow="CANConfigId" msprop:Generator_ColumnVarNameInTable="columnCANConfigId" msprop:Generator_ColumnPropNameInTable="CANConfigIdColumn" type="xs:short" />
+              <xs:element name="ProfileId" msprop:Generator_UserColumnName="ProfileId" msprop:Generator_ColumnPropNameInRow="ProfileId" msprop:Generator_ColumnVarNameInTable="columnProfileId" msprop:Generator_ColumnPropNameInTable="ProfileIdColumn" type="xs:short" />
+              <xs:element name="ID_type" msprop:Generator_UserColumnName="ID_type" msprop:Generator_ColumnPropNameInRow="ID_type" msprop:Generator_ColumnVarNameInTable="columnID_type" msprop:Generator_ColumnPropNameInTable="ID_typeColumn" type="xs:unsignedByte" />
+              <xs:element name="Output_Data_Mask" msprop:Generator_UserColumnName="Output_Data_Mask" msprop:Generator_ColumnPropNameInRow="Output_Data_Mask" msprop:Generator_ColumnVarNameInTable="columnOutput_Data_Mask" msprop:Generator_ColumnPropNameInTable="Output_Data_MaskColumn" type="xs:unsignedByte" />
+              <xs:element name="CAN_ID" msprop:Generator_UserColumnName="CAN_ID" msprop:Generator_ColumnPropNameInRow="CAN_ID" msprop:Generator_ColumnVarNameInTable="columnCAN_ID" msprop:Generator_ColumnPropNameInTable="CAN_IDColumn" type="xs:unsignedInt" />
+              <xs:element name="Mask_ID" msprop:Generator_UserColumnName="Mask_ID" msprop:Generator_ColumnPropNameInRow="Mask_ID" msprop:Generator_ColumnVarNameInTable="columnMask_ID" msprop:Generator_ColumnPropNameInTable="Mask_IDColumn" type="xs:unsignedInt" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SendWeekDay" msprop:Generator_UserTableName="SendWeekDay" msprop:Generator_RowDeletedName="SendWeekDayRowDeleted" msprop:Generator_RowChangedName="SendWeekDayRowChanged" msprop:Generator_RowClassName="SendWeekDayRow" msprop:Generator_RowChangingName="SendWeekDayRowChanging" msprop:Generator_RowEvArgName="SendWeekDayRowChangeEvent" msprop:Generator_RowEvHandlerName="SendWeekDayRowChangeEventHandler" msprop:Generator_TableClassName="SendWeekDayDataTable" msprop:Generator_TableVarName="tableSendWeekDay" msprop:Generator_RowDeletingName="SendWeekDayRowDeleting" msprop:Generator_TablePropName="SendWeekDay">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SendWeekDayId" msprop:Generator_UserColumnName="SendWeekDayId" msprop:Generator_ColumnVarNameInTable="columnSendWeekDayId" msprop:Generator_ColumnPropNameInRow="SendWeekDayId" msprop:Generator_ColumnPropNameInTable="SendWeekDayIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="SendWDay" msprop:Generator_UserColumnName="SendWDay" msprop:Generator_ColumnVarNameInTable="columnSendWDay" msprop:Generator_ColumnPropNameInRow="SendWDay" msprop:Generator_ColumnPropNameInTable="SendWDayColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SendDayTime" msprop:Generator_UserTableName="SendDayTime" msprop:Generator_RowDeletedName="SendDayTimeRowDeleted" msprop:Generator_RowChangedName="SendDayTimeRowChanged" msprop:Generator_RowClassName="SendDayTimeRow" msprop:Generator_RowChangingName="SendDayTimeRowChanging" msprop:Generator_RowEvArgName="SendDayTimeRowChangeEvent" msprop:Generator_RowEvHandlerName="SendDayTimeRowChangeEventHandler" msprop:Generator_TableClassName="SendDayTimeDataTable" msprop:Generator_TableVarName="tableSendDayTime" msprop:Generator_RowDeletingName="SendDayTimeRowDeleting" msprop:Generator_TablePropName="SendDayTime">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SendDayTimeId" msprop:Generator_UserColumnName="SendDayTimeId" msprop:Generator_ColumnVarNameInTable="columnSendDayTimeId" msprop:Generator_ColumnPropNameInRow="SendDayTimeId" msprop:Generator_ColumnPropNameInTable="SendDayTimeIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="SendDTime" msprop:Generator_UserColumnName="SendDTime" msprop:Generator_ColumnVarNameInTable="columnSendDTime" msprop:Generator_ColumnPropNameInRow="SendDTime" msprop:Generator_ColumnPropNameInTable="SendDTimeColumn" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SmsWeekDay" msprop:Generator_UserTableName="SmsWeekDay" msprop:Generator_RowDeletedName="SmsWeekDayRowDeleted" msprop:Generator_RowChangedName="SmsWeekDayRowChanged" msprop:Generator_RowClassName="SmsWeekDayRow" msprop:Generator_RowChangingName="SmsWeekDayRowChanging" msprop:Generator_RowEvArgName="SmsWeekDayRowChangeEvent" msprop:Generator_RowEvHandlerName="SmsWeekDayRowChangeEventHandler" msprop:Generator_TableClassName="SmsWeekDayDataTable" msprop:Generator_TableVarName="tableSmsWeekDay" msprop:Generator_RowDeletingName="SmsWeekDayRowDeleting" msprop:Generator_TablePropName="SmsWeekDay">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SmsWeekDayId" msprop:Generator_UserColumnName="SmsWeekDayId" msprop:Generator_ColumnVarNameInTable="columnSmsWeekDayId" msprop:Generator_ColumnPropNameInRow="SmsWeekDayId" msprop:Generator_ColumnPropNameInTable="SmsWeekDayIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="SmsWDay" msprop:Generator_UserColumnName="SmsWDay" msprop:Generator_ColumnVarNameInTable="columnSmsWDay" msprop:Generator_ColumnPropNameInRow="SmsWDay" msprop:Generator_ColumnPropNameInTable="SmsWDayColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SmsDayTime" msprop:Generator_UserTableName="SmsDayTime" msprop:Generator_RowDeletedName="SmsDayTimeRowDeleted" msprop:Generator_RowChangedName="SmsDayTimeRowChanged" msprop:Generator_RowClassName="SmsDayTimeRow" msprop:Generator_RowChangingName="SmsDayTimeRowChanging" msprop:Generator_RowEvArgName="SmsDayTimeRowChangeEvent" msprop:Generator_RowEvHandlerName="SmsDayTimeRowChangeEventHandler" msprop:Generator_TableClassName="SmsDayTimeDataTable" msprop:Generator_TableVarName="tableSmsDayTime" msprop:Generator_RowDeletingName="SmsDayTimeRowDeleting" msprop:Generator_TablePropName="SmsDayTime">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SmsDayTimeId" msprop:Generator_UserColumnName="SmsDayTimeId" msprop:Generator_ColumnVarNameInTable="columnSmsDayTimeId" msprop:Generator_ColumnPropNameInRow="SmsDayTimeId" msprop:Generator_ColumnPropNameInTable="SmsDayTimeIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="SmsDTime" msprop:Generator_UserColumnName="SmsDTime" msprop:Generator_ColumnVarNameInTable="columnSmsDTime" msprop:Generator_ColumnPropNameInRow="SmsDTime" msprop:Generator_ColumnPropNameInTable="SmsDTimeColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SendDayTimeUnused" msprop:Generator_UserTableName="SendDayTimeUnused" msprop:Generator_RowDeletedName="SendDayTimeUnusedRowDeleted" msprop:Generator_RowChangedName="SendDayTimeUnusedRowChanged" msprop:Generator_RowClassName="SendDayTimeUnusedRow" msprop:Generator_RowChangingName="SendDayTimeUnusedRowChanging" msprop:Generator_RowEvArgName="SendDayTimeUnusedRowChangeEvent" msprop:Generator_RowEvHandlerName="SendDayTimeUnusedRowChangeEventHandler" msprop:Generator_TableClassName="SendDayTimeUnusedDataTable" msprop:Generator_TableVarName="tableSendDayTimeUnused" msprop:Generator_RowDeletingName="SendDayTimeUnusedRowDeleting" msprop:Generator_TablePropName="SendDayTimeUnused">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SendDayTimeUnusedId" msprop:Generator_UserColumnName="SendDayTimeUnusedId" msprop:Generator_ColumnVarNameInTable="columnSendDayTimeUnusedId" msprop:Generator_ColumnPropNameInRow="SendDayTimeUnusedId" msprop:Generator_ColumnPropNameInTable="SendDayTimeUnusedIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="Unused" msprop:Generator_UserColumnName="Unused" msprop:Generator_ColumnVarNameInTable="columnUnused" msprop:Generator_ColumnPropNameInRow="Unused" msprop:Generator_ColumnPropNameInTable="UnusedColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SmsDayTimeUnused" msprop:Generator_UserTableName="SmsDayTimeUnused" msprop:Generator_RowDeletedName="SmsDayTimeUnusedRowDeleted" msprop:Generator_RowChangedName="SmsDayTimeUnusedRowChanged" msprop:Generator_RowClassName="SmsDayTimeUnusedRow" msprop:Generator_RowChangingName="SmsDayTimeUnusedRowChanging" msprop:Generator_RowEvArgName="SmsDayTimeUnusedRowChangeEvent" msprop:Generator_RowEvHandlerName="SmsDayTimeUnusedRowChangeEventHandler" msprop:Generator_TableClassName="SmsDayTimeUnusedDataTable" msprop:Generator_TableVarName="tableSmsDayTimeUnused" msprop:Generator_RowDeletingName="SmsDayTimeUnusedRowDeleting" msprop:Generator_TablePropName="SmsDayTimeUnused">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SmsDayTimeUnusedId" msprop:Generator_UserColumnName="SmsDayTimeUnusedId" msprop:Generator_ColumnVarNameInTable="columnSmsDayTimeUnusedId" msprop:Generator_ColumnPropNameInRow="SmsDayTimeUnusedId" msprop:Generator_ColumnPropNameInTable="SmsDayTimeUnusedIdColumn" type="xs:short" />
+              <xs:element name="OperatorId" msprop:Generator_UserColumnName="OperatorId" msprop:Generator_ColumnVarNameInTable="columnOperatorId" msprop:Generator_ColumnPropNameInRow="OperatorId" msprop:Generator_ColumnPropNameInTable="OperatorIdColumn" type="xs:short" />
+              <xs:element name="Unused" msprop:Generator_UserColumnName="Unused" msprop:Generator_ColumnVarNameInTable="columnUnused" msprop:Generator_ColumnPropNameInRow="Unused" msprop:Generator_ColumnPropNameInTable="UnusedColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GeofenceFrame_Hlp" msprop:Generator_UserTableName="GeofenceFrame_Hlp" msprop:Generator_RowDeletedName="GeofenceFrame_HlpRowDeleted" msprop:Generator_RowChangedName="GeofenceFrame_HlpRowChanged" msprop:Generator_RowClassName="GeofenceFrame_HlpRow" msprop:Generator_RowChangingName="GeofenceFrame_HlpRowChanging" msprop:Generator_RowEvArgName="GeofenceFrame_HlpRowChangeEvent" msprop:Generator_RowEvHandlerName="GeofenceFrame_HlpRowChangeEventHandler" msprop:Generator_TableClassName="GeofenceFrame_HlpDataTable" msprop:Generator_TableVarName="tableGeofenceFrame_Hlp" msprop:Generator_RowDeletingName="GeofenceFrame_HlpRowDeleting" msprop:Generator_TablePropName="GeofenceFrame_Hlp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FrameId" msprop:Generator_UserColumnName="FrameId" msprop:Generator_ColumnPropNameInRow="FrameId" msprop:Generator_ColumnVarNameInTable="columnFrameId" msprop:Generator_ColumnPropNameInTable="FrameIdColumn" type="xs:short" />
+              <xs:element name="ShapeType" msprop:Generator_UserColumnName="ShapeType" msprop:Generator_ColumnPropNameInRow="ShapeType" msprop:Generator_ColumnVarNameInTable="columnShapeType" msprop:Generator_ColumnPropNameInTable="ShapeTypeColumn" type="xs:unsignedByte" />
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:unsignedByte" />
+              <xs:element name="EnterEvent" msprop:Generator_UserColumnName="EnterEvent" msprop:Generator_ColumnPropNameInRow="EnterEvent" msprop:Generator_ColumnVarNameInTable="columnEnterEvent" msprop:Generator_ColumnPropNameInTable="EnterEventColumn" type="xs:unsignedByte" />
+              <xs:element name="ExitEvent" msprop:Generator_UserColumnName="ExitEvent" msprop:Generator_ColumnPropNameInRow="ExitEvent" msprop:Generator_ColumnVarNameInTable="columnExitEvent" msprop:Generator_ColumnPropNameInTable="ExitEventColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Profile" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Sys_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sys" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Gps_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Gps" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Geofence_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Geofence" />
+      <xs:field xpath="mstns:GeofenceId" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Geofence" />
+      <xs:field xpath="mstns:GeofenceId" />
+    </xs:unique>
+    <xs:unique name="Frame_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Frame" />
+      <xs:field xpath="mstns:GeofenceId" />
+      <xs:field xpath="mstns:FrameId" />
+    </xs:unique>
+    <xs:unique name="Gsm_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Gsm" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Gprs_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Gprs" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Sms_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sms" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Securenum_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Securenum" />
+      <xs:field xpath="mstns:ServerNumId" />
+      <xs:field xpath="mstns:Num" />
+    </xs:unique>
+    <xs:unique name="Operator_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Operator" />
+      <xs:field xpath="mstns:OperatorId" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="Operator_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:Operator" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="OperatorCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:OperatorCode" />
+      <xs:field xpath="mstns:OperatorCodeId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="Accelerometer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Accelerometer" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="IO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:IO" />
+      <xs:field xpath="mstns:IOId" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="IO_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:IO" />
+      <xs:field xpath="mstns:IOId" />
+    </xs:unique>
+    <xs:unique name="ServerNum_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ServerNum" />
+      <xs:field xpath="mstns:ProfileId" />
+      <xs:field xpath="mstns:ServerNumId" />
+    </xs:unique>
+    <xs:unique name="ServerNum_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:ServerNum" />
+      <xs:field xpath="mstns:ServerNumId" />
+    </xs:unique>
+    <xs:unique name="CANConfig_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CANConfig" />
+      <xs:field xpath="mstns:CANConfigId" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:unique>
+    <xs:unique name="SendWeekDay_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SendWeekDay" />
+      <xs:field xpath="mstns:SendWeekDayId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="SendDayTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SendDayTime" />
+      <xs:field xpath="mstns:SendDayTimeId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="SmsWeekDay_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SmsWeekDay" />
+      <xs:field xpath="mstns:SmsWeekDayId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="SmsDayTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SmsDayTime" />
+      <xs:field xpath="mstns:SmsDayTimeId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="SendDayTimeUnused_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SendDayTimeUnused" />
+      <xs:field xpath="mstns:SendDayTimeUnusedId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="SmsDayTimeUnused_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SmsDayTimeUnused" />
+      <xs:field xpath="mstns:SmsDayTimeUnusedId" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:unique>
+    <xs:unique name="GeofenceFrame_Hlp_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GeofenceFrame_Hlp" />
+      <xs:field xpath="mstns:FrameId" />
+    </xs:unique>
+    <xs:keyref name="FK_Operator_SmsDayTimeUnused" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SmsDayTimeUnused" msprop:rel_Generator_RelationVarName="relationFK_Operator_SmsDayTimeUnused" msprop:rel_Generator_UserChildTable="SmsDayTimeUnused" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSmsDayTimeUnusedRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SmsDayTimeUnused" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_SendDayTimeUnused" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SendDayTimeUnused" msprop:rel_Generator_RelationVarName="relationFK_Operator_SendDayTimeUnused" msprop:rel_Generator_UserChildTable="SendDayTimeUnused" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSendDayTimeUnusedRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SendDayTimeUnused" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_SmsDayTime" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SmsDayTime" msprop:rel_Generator_RelationVarName="relationFK_Operator_SmsDayTime" msprop:rel_Generator_UserChildTable="SmsDayTime" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSmsDayTimeRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SmsDayTime" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_SmsWeekDay" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SmsWeekDay" msprop:rel_Generator_RelationVarName="relationFK_Operator_SmsWeekDay" msprop:rel_Generator_UserChildTable="SmsWeekDay" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSmsWeekDayRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SmsWeekDay" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_SendDayTime" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SendDayTime" msprop:rel_Generator_RelationVarName="relationFK_Operator_SendDayTime" msprop:rel_Generator_UserChildTable="SendDayTime" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSendDayTimeRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SendDayTime" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_SendWeekDay" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_SendWeekDay" msprop:rel_Generator_RelationVarName="relationFK_Operator_SendWeekDay" msprop:rel_Generator_UserChildTable="SendWeekDay" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetSendWeekDayRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:SendWeekDay" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_CANConfig" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_CANConfig" msprop:rel_Generator_RelationVarName="relationFK_Profile_CANConfig" msprop:rel_Generator_UserChildTable="CANConfig" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetCANConfigRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:CANConfig" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_ServerNum" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_ServerNum" msprop:rel_Generator_RelationVarName="relationFK_Profile_ServerNum" msprop:rel_Generator_UserChildTable="ServerNum" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetServerNumRows">
+      <xs:selector xpath=".//mstns:ServerNum" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_IO" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_IO" msprop:rel_Generator_RelationVarName="relationFK_Profile_IO" msprop:rel_Generator_UserChildTable="IO" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetIORows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:IO" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Accelerometer" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Accelerometer" msprop:rel_Generator_RelationVarName="relationFK_Profile_Accelerometer" msprop:rel_Generator_UserChildTable="Accelerometer" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetAccelerometerRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Accelerometer" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Operator_OperatorCode" refer="Operator_Constraint2" msprop:rel_Generator_UserRelationName="FK_Operator_OperatorCode" msprop:rel_Generator_RelationVarName="relationFK_Operator_OperatorCode" msprop:rel_Generator_UserChildTable="OperatorCode" msprop:rel_Generator_UserParentTable="Operator" msprop:rel_Generator_ParentPropName="OperatorRow" msprop:rel_Generator_ChildPropName="GetOperatorCodeRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:OperatorCode" />
+      <xs:field xpath="mstns:OperatorId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Operator" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Operator" msprop:rel_Generator_RelationVarName="relationFK_Profile_Operator" msprop:rel_Generator_UserChildTable="Operator" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetOperatorRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Operator" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_ServerNum_Securenum" refer="ServerNum_Constraint2" msprop:rel_Generator_UserRelationName="FK_ServerNum_Securenum" msprop:rel_Generator_RelationVarName="relationFK_ServerNum_Securenum" msprop:rel_Generator_UserChildTable="Securenum" msprop:rel_Generator_UserParentTable="ServerNum" msprop:rel_Generator_ParentPropName="ServerNumRow" msprop:rel_Generator_ChildPropName="GetSecurenumRows">
+      <xs:selector xpath=".//mstns:Securenum" />
+      <xs:field xpath="mstns:ServerNumId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Sms" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Sms" msprop:rel_Generator_RelationVarName="relationFK_Profile_Sms" msprop:rel_Generator_UserChildTable="Sms" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetSmsRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Sms" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Gprs" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Gprs" msprop:rel_Generator_RelationVarName="relationFK_Profile_Gprs" msprop:rel_Generator_UserChildTable="Gprs" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetGprsRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Gprs" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Gsm" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Gsm" msprop:rel_Generator_RelationVarName="relationFK_Profile_Gsm" msprop:rel_Generator_UserChildTable="Gsm" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetGsmRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Gsm" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Geofence_Frame" refer="Constraint2" msprop:rel_Generator_UserRelationName="FK_Geofence_Frame" msprop:rel_Generator_RelationVarName="relationFK_Geofence_Frame" msprop:rel_Generator_UserChildTable="Frame" msprop:rel_Generator_UserParentTable="Geofence" msprop:rel_Generator_ParentPropName="GeofenceRow" msprop:rel_Generator_ChildPropName="GetFrameRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Frame" />
+      <xs:field xpath="mstns:GeofenceId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Geofence" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Geofence" msprop:rel_Generator_RelationVarName="relationFK_Profile_Geofence" msprop:rel_Generator_UserChildTable="Geofence" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetGeofenceRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Geofence" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Gps" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Gps" msprop:rel_Generator_RelationVarName="relationFK_Profile_Gps" msprop:rel_Generator_UserChildTable="Gps" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetGpsRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Gps" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+    <xs:keyref name="FK_Profile_Sys" refer="Constraint1" msprop:rel_Generator_UserRelationName="FK_Profile_Sys" msprop:rel_Generator_RelationVarName="relationFK_Profile_Sys" msprop:rel_Generator_UserChildTable="Sys" msprop:rel_Generator_UserParentTable="Profile" msprop:rel_Generator_ParentPropName="ProfileRow" msprop:rel_Generator_ChildPropName="GetSysRows" msdata:UpdateRule="None">
+      <xs:selector xpath=".//mstns:Sys" />
+      <xs:field xpath="mstns:ProfileId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

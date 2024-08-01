@@ -1,0 +1,344 @@
+***	2007.04.02	1.0.0.1
+	Tadas
+Support for flash (profile) no. 4 added.
+
+*** 2007.04.02	1.0.0.2
+	Tadas
+Solution named 'FM41XX Configurator'.
+Geofencing frame type value 0 is now treated as disabled.
+Fixed databinding bug in IOUserControl.cs.
+
+*** 2007.04.02 1.0.0.3
+	Tadas
+Fixed bug float numbers now are formated to invariant culture when transfering to device.
+
+*** 2007.04.02 1.0.0.4
+	Tadas
+'Check All', 'Clear All' buttons in WeekTime control.
+
+*** 2007.04.02 1.0.0.5
+	Tadas
+Fixed small databinding bug in WeekTimeUserControl.cs.
+
+*** 2007.04.16 1.0.0.6
+	Tadas
+Request packet end token changed from 0x0D to 0x0A.
+Response packet end token is 0x0D.
+
+*** 2007.05.18 1.0.0.7
+	Tadas
+New I/O types.
+New field 'Time Step' added to Operators structure (table).
+
+*** 2007.05.30 1.0.0.8
+	Tadas
+New GSM parameter MinSavedRecords.
+Abbility to read device's IMEI number.
+
+*** 2007.06.01 1.0.0.9
+	Tadas
+Profile dataset table SecureNum splited into ServerNum (holds first number) and SecureNum.
+
+*** 2007.06.06 1.0.0.10
+	Tadas
+Fixed bug when sending operators structure. 'Time step' parameter moved from Operator table to new TimeStep table.
+
+*** 2007.06.19 1.0.0.11
+	Tadas
+New SMS fields: Login, Password.
+
+*** 2007.06.22 1.0.0.14
+	Tadas
+Changed geofencing zone types.
+
+*** 2007.07.24 1.0.0.20
+	Aleksej
+Changed geofencing display logic.
+Changed profile dataset structure, that keeps send parameters.
+(instead of SendWeekTime, SmsWeekTime tables now dataset contains tables 
+SendWeekDay,
+SendDayTime,
+SendDayTimeUnused,
+SmsWeekDay,
+SmsDayTime,
+SmsDayTimeUnused)
+Fixed bug in send/sms time saving and loading.
+Added possibility to reset device.
+Added functionality to handle CAN type inputs.(UI in IO tab expanded.)
+
+*** 2007.08.21 1.0.0.21
+	Aleksej
+Removed Profile.TimeStep table.
+Changed logic in ProfileParserOperator, ProfileSetOperator, OperatorUserControl
+
+*** 2007.08.21 1.0.0.22
+	Aleksej
+Changed IOType with id=18 from 'None' to 'Current profile'
+
+*** 2007.08.24 1.0.0.23
+	Aleksej
+Modified requesting and sending logic for SSecurnum.
+Variable-length and empty strings are processed; DataGridView allows to set number length at [0; 16]
+Added input validation to server number input field
+
+*** 2007.08.27 1.0.0.24
+	Aleksej
+Added possibility to detect configurator version, Profile.xml was created with.
+
+*** 2007.09.20 1.0.0.25
+	Aleksej
+IO HighLevel, LowLevel fields now allow entering negative values.
+
+*** 2007.09.24 1.0.0.26
+	Aleksej
+GPRS table Username, Password fields now allow max. 30 symbols
+Added possibility to get and view actual profile number.
+To-Do: PIN code, SmsCenter
+
+*** 2007.09.24 1.0.0.27
+	Aleksej
+Fixed bug in Gsm string parsing
+Reset timeout changed to 10seconds
+
+*** 2007.09.26 1.0.0.28
+	Aleksej
+Gsm.AnswerAuto max.value limited to '20'
+Changed databinding logic, concerning NumericUpDown controls. Now NumericUpDown controls "Text" property is databound to DB fields.
+Added methods
+ConfigurationPanelUserControl.ConvertNumericUpDownStoredTypeToString()
+ConfigurationPanelUserControl.ConvertStringToNumericUpDownStoredType()
+ConfigurationPanelUserControl.SetBindingHandlers()
+
+*** 2007.09.27 1.0.0.29
+	Aleksej
+COM port manual selection.
+
+*** 2007.09.28 1.0.0.30
+	Aleksej
+Added simple invalid profile format diagnostic. Configurator detects and replaces packets, that are in invalid format.
+Diagnostic is shown in DataValidationForm.
+
+*** 2007.10.10 1.0.0.31
+	Aleksej
+IO.Priority property updated.
+(Low, High, Panic) -> (Low, High, Panic, Reserved, SW21, SW22, SW23, SW24)
+(0, 1, 2) -> (0, 1, 2, 3, 4, 5, 6, 7)
+
+*** 2007.10.11 1.0.0.32
+	Aleksej
+If IO.HighLevel < IO.LowLevel, warning message is displayed to user
+
+*** 2007.10.17 1.0.0.33
+	Aleksej
+Global parameters support.
+
+*** 2007.10.24 1.0.0.34
+	Aleksej
+Changed IO Operands. (Or,And) -> (OnExit, OnEntrance, OnBoth)
+
+*** 2007.10.26 1.0.0.35
+	Aleksej
+Operand=OnBoth and priority=[SW21, SW22, SW23, SW24] show warning
+GpsSerialPort works handles port connect/disconnect not in Auto mode. User should connect/disconnect port manually.
+
+*** 2007.11.05 1.0.0.36
+	Aleksej
+CallTrigger value is displayed in ComboBox(instead of NumericUpDown)
+Added CallTrigger interpretations.
+
+*** 2007.11.06 1.0.0.37
+	Aleksej
+FM41XXCOnfigurator.Protocol : Added classes ModemSetupRequest, ModemSetupResponse to store voice settings in modem.
+
+*** 2007.12.17 1.0.0.38
+	Aleksej
+Added possibility to configure Numbers and Ranges in Global parameters.
+
+	
+*** 2007.12.28 1.0.48.39 Note: 48 Build number corresponds FM firmware version
+	Aleksej
+Fixed bug with ID response parsing.
+Fixed bug with IO/CAN values refreshing, when changing them in background (f.e. via SMS)
+Added classes Common.CANConfigConverter, Configuration.ControlsEx.CANUserControl
+
+*** 2008.01.23 1.0.49.42
+	Aleksej
+Avg value input is limited to [1; 65535]
+
+
+*** 2008.01.30 1.0.49.43
+	Aleksej
+Few little GUI changes.
+
+*** 2008.01.30 1.0.49.44
+	Aleksej
+GPS.MinPeriod maximum allowed value changed.
+short -> unsignedInt (max. 1mln.=1.000.000)
+
+*** 2008.03.03 1.0.50.0
+	Aleksej
+Added support for temperature sensors.
+
+*** 2008.03.12 1.0.50.1
+	Aleksej
+GPS.TimeToFix parameter is displayed in input field 'Angle'
+Operator.SendPeriod max.allowed value now is 172800
+
+*** 2008.03.20 1.0.50.2
+	Aleksej
+GPS.MinPeriod maximum allowed value changed.
+short -> unsignedInt (max. 1mln.=1.000.000)
+
+*** 2008.03.20 1.0.50.3
+	Aleksej
+Changed GPS.MinAngle allowed values.
+
+*** 2008.04.28 1.0.50.4
+	Aleksej
+File transmission via Y-Modem is fully supported.
+
+*** 2008.04.30 1.0.50.5
+	Aleksej
+Fixed bug when trying to enter UART boot mode while sending file via Y-modem.
+(added one more condition)
+
+*** 2008.05.19 1.0.50.7
+	Aleksej
+Changes in GUI.
+
+*** 2008.09.24 1.0.50.13
+	Vitaliy
+Hided SMS send period in SMSUserControl panel
+
+*** 2009.03.02 1.0.50.15
+	Mantas
+Firmware update button removed.
+
+*** 2009.03.04 1.0.50.16
+	Mantas
+Hysteresis option added in IO Properties > Generate events
+
+*** 2009.06.03 1.22.0.17
+	Tadas
+Adapted for "branding".
+
+*** 2009.07.24 1.0.1.19
+Pakeistas parametro P:Ssystem tipas ir galimos jo reikðmës;
+BugFix'ai:
+ Automatinis default profile uþkrovimas starto metu;
+ Record size dydþio skaièiavimas, naujas label record size parodymui;
+ Naujo profile uþkrovimas ant jau esanèio, po CAN Output Data Mask pakeitimo
+Pridëtas globalus parametras RecRefreshTmo.
+
+*** 2009.07.31 1.0.1.20
+Fixed:
+ Sukeista vietomis Analog Input parametrai
+
+*** 2009.08.20 1.0.1.21
+ Logfile pavadinimo nuskaitymas ið log4net.config.xml ir iðtrynimas starto metu.
+ Geofence staèiakampio koordinaèiø tikrinimas (X1, X2 ir Y1, Y2 palyginimas).
+ Paveikslëliø atvaizdavimas pagal pasirinktà Geozonos formà. 
+
+*** 2009.08.21 1.0.1.22
+ AN1,AN2,AN3,AN4 (0...10V) reikðmë 255 pakeista á 15.
+ 
+*** 2010.04.28 1.0.1.23
+	Valerij
+"Battery level" IO changed to "Battery current" IO.
+
+*** 2010.05.12 1.0.2.24
+	Valerij
+Merged with Gvidas Valaitis last year changes.
+
+*** 2010.06.10 1.0.2.25
+	Valerij
+New function to read modem firmware version.
+
+*** 2012.04.25 1.0.1.28
+	Andrius
+Bug fix #4271
+
+*** 2012.04.25 1.0.1.29
+	Andrius
+Bug fix #4271 sutvarkyta iki galo
+
+*** 2012.05.15 1.0.1.30
+	Andrius
+sutvarkyta, kad nevisada globaliu forma atidarydavo;
+sutvarkyta, kad korektiskai uzloadintu globaliu default;
+
+*** 2012.05.21 1.0.1.31
+	Julius
+Added AboutForm;
+Added Teltonika Icon to MainForm;
+
+*** 2012.06.18 1.0.1.32
+	Julius
+ProfileInfoPanelUserControl now scales according to MainForm;
+Other small UI fixes;
+
+*** 2012.07.04 1.0.1.33
+	Julius
+Only ASCII characters allowed in APN, APN user name, APN password,
+  SMS login and SMS pasword;
+Fixed Profile Read Error message box;
+
+*** 2012.09.05 1.0.1.34
+	Julius
+Bugfix #4862 (Switched X and Y fields in Geofencing);
+
+*** 2012.11.21 1.0.1.35
+	Julius
+Removed excessive logging;
+Fixed Global Parameters ModemSetup crash, when saving multiple times;
+Fixed Port selection to work with keyboard/mousewheel;
+Waiting 0.75 seconds after connect for FM to switch out of Garmin Mode;
+
+*** 2012.11.21 1.0.1.36
+	Julius
+Bugfix #5287: 
+	GPS minPeriodNumericUpDown.Maximum 1000000 -> 9999999;
+It is no longer needed to enter "0" for an empty Operators List entry;
+Added RecRefreshTmo flashing response packet;
+
+*** 2012.11.30 1.0.1.37
+	Julius
+Further trimmed port logging;
+Bugfix #5433 (max Operator Code length 6 -> 7);
+
+*** 2012.12.05 1.0.1.38
+	Julius
+Copy/Paste/Delete now works in Operators List;
+Fixed Operators List empty entry;
+Copy/Paste/Delete now works in SMS Authorized Phone Numbers List;
+
+*** 2013.02.13 1.0.1.39
+	JuliusG
+Fixed Default AINS value for Global Parameters;
+
+*** 2013.02.15 1.0.1.40
+	JuliusG
+Fixed that Error logging in GpsSerialPort;
+Improved Global Parameters Write logging;
+
+*** 2013.02.22 1.0.1.41
+	JuliusG
+Added additional logging to GpsSerialPort when TIMEOUT occurs;
+
+*** 2013.03.27 1.0.1.42
+	JuliusG
+Bugfix #6237 (maximum Operator Code length 7 -> 9);
+Changed Version textbox to show CodeVersion;
+
+*** 2013.03.27 1.0.2.0
+	AndriusS
+DEV-237 add global parameter GNSS
+Version Change
+
+*** 2013.06.26 1.0.2.1
+	Julius R.
+CAN MASK correction
+
+*** 2013.11.05 1.0.2.2
+	JuliusG
+Changed ranges for Accelerometer controls

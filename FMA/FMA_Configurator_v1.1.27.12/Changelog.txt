@@ -1,0 +1,1268 @@
+﻿         ╔════════════════════════════════════╗
+ ════════╣   FMA Configurator 1.01.27.xx	  ╠═══════════════════════════════
+		 ╚════════════════════════════════════╝
+------------------------------------------------------------------------------
+  1.1.27.11 -> 1.1.27.12 2018-07-19 Pavel D.
+------------------------------------------------------------------------------
+  - Fix configurator crash when try configure geofence parameters
+  - Fix sms event visibility.
+------------------------------------------------------------------------------
+  1.1.27.10 -> 1.1.27.11 2018-06-26 Pavel D.
+------------------------------------------------------------------------------
+  - Fixed Geofencing rectangle X2 coordinate bug.
+  - Fixed SMS event parameter visibility by connected device
+  - Add confgiguration LOAD retry if some of packets is incorrect.
+  - Fix keyword allowed characters regex.
+  - Fix default values for black operrators string. 
+  - Added warning if try to insert to keyrword textbox'es not letter and not decimal number.
+------------------------------------------------------------------------------
+  1.1.27.09 -> 1.1.27.10 2018-03-02 Pavel D.
+------------------------------------------------------------------------------
+  - Fix server port configuration in simple cfg user control.
+------------------------------------------------------------------------------
+  1.1.27.08 -> 1.1.27.09 2017-11-22 Vytautas B.
+------------------------------------------------------------------------------
+  - Always online can be configurable with TM11Q.
+------------------------------------------------------------------------------
+  1.1.27.07 -> 1.1.27.08 2017-11-22 Pavel D.
+------------------------------------------------------------------------------
+  - Fix navigation bug when CONNECT/DISCONNECT from SimpleCfgControl.
+  - Set unvisible LVCAN/ALLCAN and LLS sms events if FMA2 is connected
+  - Remove LVCAN from Min Speed Source if FMA2 is connected.
+------------------------------------------------------------------------------
+  1.1.27.06 -> 1.1.27.07 2017-11-16 Pavel D.
+------------------------------------------------------------------------------
+  - Fix recommended configuration.
+  - Lock recommended configuration button when profile is save/load/ResetDevice.
+  - Changed default configuration to match the device configuration.
+  - Fix some parameters max values
+  - Add TMO before send global parameter config for correct iButton configurationn.
+------------------------------------------------------------------------------
+  1.1.27.05 -> 1.1.27.06 2017-08-16 Pavel D.
+------------------------------------------------------------------------------
+  - Add new SMSEVENTUSERCONTROL for RU konfiguration. Some RU konfigurator fix'es.
+------------------------------------------------------------------------------
+  1.1.27.04 -> 1.1.27.05 2017-08-07 Pavel D.
+------------------------------------------------------------------------------
+  - Translation fix'es.
+------------------------------------------------------------------------------
+  1.1.27.03 -> 1.1.27.04 2017-07-18 Pavel D.
+------------------------------------------------------------------------------
+  - Change configurator name from FM11XX to FMA.
+------------------------------------------------------------------------------
+  1.1.27.02 -> 1.1.27.03 2017-07-11 Pavel D.
+------------------------------------------------------------------------------
+  - Add additional information of device and configurator to .XML file.
+ ------------------------------------------------------------------------------
+  1.1.27.01 -> 1.1.27.02 2017-07-11 Pavel D.
+------------------------------------------------------------------------------
+  - Grammar fix in ignition detection settings.
+ ------------------------------------------------------------------------------
+  1.1.27.00 -> 1.1.27.01 2017-06-29 Vytautas B. 
+------------------------------------------------------------------------------
+  - Oil level is shown with LVCAN200.
+------------------------------------------------------------------------------
+  1.1.26.03 -> 1.1.27.00 2017-06-27 Vytautas B. 
+------------------------------------------------------------------------------
+  - Added oil level LVCAN element.
+------------------------------------------------------------------------------
+  1.1.26.02 -> 1.1.26.99 2017-06-02 Vytautas B. 
+------------------------------------------------------------------------------
+  - Added GreenDriving source selection.
+------------------------------------------------------------------------------
+  1.1.26.01 -> 1.1.26.02 2017-06-01 Pavel D. 
+------------------------------------------------------------------------------
+  - Increase iButton configuration TMO.
+------------------------------------------------------------------------------
+  1.1.26.00 -> 1.1.26.01 2017-05-31 Ugnius B. 
+------------------------------------------------------------------------------
+  - Fixed RS232/RS485 baudrate selection.
+------------------------------------------------------------------------------
+  1.1.25.02 -> 1.1.26.00 2017-05-11 Pavel D.
+------------------------------------------------------------------------------
+  - Merge FMA2 configurator with FMA1:
+  - add spec ignition detection parameters, implement configuration. 
+  - Move ignition detection parametrs to ignition source table layout . 
+  - Modify RS232 RS485 request/response.
+  - Add G4 HW rev paraser for FMA2. 
+  - Add Immobilizer ignition off timeoute parameter.
+
+------------------------------------------------------------------------------
+  1.1.25.00 -> 1.1.25.02 2017-04-25 Vytautas B.
+------------------------------------------------------------------------------
+  - Added parameters from old 01.25.xx Added CNG data from ALLCAN.
+------------------------------------------------------------------------------
+  1.1.24.05 -> 1.1.25.00 2017-04-14 Pavel D.
+------------------------------------------------------------------------------
+  - Rework iButton configuration. Increased iButton codes to 500.
+  - Add new scenario: iButton Detection.
+------------------------------------------------------------------------------
+  1.1.24.04 -> 1.1.24.05 2017-03-28 Pavel D.
+------------------------------------------------------------------------------
+  - Add EngineTemperature to LVCAN200 I/O elements configuration. 
+  - Fixed multiple translation issues .Fixed System, DAM, I/O, LVCAN, GSM/SMS events layout
+------------------------------------------------------------------------------
+  1.1.24.03 -> 1.1.24.04 2017-03-07 Pavel D.
+------------------------------------------------------------------------------
+  - Fix scenarios dout control combobox reseting to default after disconnect. 
+------------------------------------------------------------------------------
+  1.1.24.02 -> 1.1.24.03 2017-02-24 Povilas B.
+------------------------------------------------------------------------------
+  - System parameter saving/sending records edit. 
+------------------------------------------------------------------------------
+  1.1.24.01 -> 1.1.24.02 2017-01-17 Vytautas B.
+------------------------------------------------------------------------------
+  - Added new paramter - Always Online.   
+------------------------------------------------------------------------------
+  1.1.24.00 -> 1.1.24.01 2016-12-19 Pavel D.
+------------------------------------------------------------------------------
+  - Change Stop Detection Source to Movement Sensor.      
+------------------------------------------------------------------------------
+  1.1.21.08 -> 1.1.24.00 2016-11-24 Pavel D.
+------------------------------------------------------------------------------
+  - Movel CAN parameter from system user control to LVCAN user control.
+  - Ported operator black list functionality fro v1.1.22.00.
+  - Ported modified jamming functionality from v1.1.22.00
+  - Added jamming sensitivity functionality with Jamming timeout and Jamming Dout Duration and DOUT control enable configuration.
+  - Ported new 4 Dallas temperature sensors functionality from v1.1.23.00
+  - Scenario user contol a rework
+  - Added "Remember IButton ID" parameter. 
+  - Added Continious Odometer parameters to Trip user control
+  - Delete Authorised Driving sms event.
+  - Added odomoter set button.
+  - Added new I/O element TOTAL DISTANCE.
+  - Renamed ODOMETER VALUE I/O element to TRIP DISTANCE.
+  - Added Scenarios parameters mapping.
+  - Added 2 new LVCAN IO elements (RV).
+------------------------------------------------------------------------------
+  1.1.21.06 -> 1.1.21.07 2016-11-04 RV
+------------------------------------------------------------------------------
+  - #12696. Added new LVCAN parameter "Send data with 0 values, if ignition is off"
+------------------------------------------------------------------------------
+  1.1.21.05 -> 1.1.21.06 2016-10-19 Mindaugas M.
+------------------------------------------------------------------------------
+  - MapControl update
+  - Fixed LVCAN Scan parameters bug fix
+  - Geofencing validated data error fix
+------------------------------------------------------------------------------
+  1.1.21.04 -> 1.1.21.05 2016-10-12 Povilas B.
+------------------------------------------------------------------------------
+  - Added Units section
+------------------------------------------------------------------------------
+  1.1.21.03 -> 1.1.21.04 2016-09-29 Vytautas B.
+------------------------------------------------------------------------------
+  - Fixed mantis - 12272, Available bytes counter.
+------------------------------------------------------------------------------
+  1.1.21.02 -> 1.1.21.03 2016-09-27 Vytautas B.
+------------------------------------------------------------------------------
+  - Fixed mantis - 12238, gprs port numerc updown and mapcontrol update.
+------------------------------------------------------------------------------
+  1.1.19.09 -> 1.1.21.02 2016-09-15 Vytautas B.
+------------------------------------------------------------------------------
+  - New version.
+------------------------------------------------------------------------------
+  1.1.19.08 -> 1.1.19.09 2016-09-06 Pavel D.
+------------------------------------------------------------------------------
+  - Fixed Mantis 12146 New LVCAN ComboBox in System Windows
+------------------------------------------------------------------------------
+  1.1.19.07 -> 1.1.19.08 2016-08-11 Pavel D.
+------------------------------------------------------------------------------
+- Fixed mantis 11890, 11794
+------------------------------------------------------------------------------
+  1.1.19.06 -> 1.1.19.07 2016-07-22 SP
+------------------------------------------------------------------------------
+- I/O Select/Deselect all for 1125 (#11816)
+------------------------------------------------------------------------------
+  1.1.19.05 -> 1.1.19.06 2016-07-07 Rimas M.
+------------------------------------------------------------------------------
+Fixed bug when profile was dropped before reading configuration for verification.
+------------------------------------------------------------------------------
+  1.1.19.04 -> 1.1.19.05 2016-06-30 Jonas K.
+------------------------------------------------------------------------------
+Sleep Tmo max value now is 9000s.
+------------------------------------------------------------------------------
+  1.1.19.03 -> 1.1.19.04 2016-06-29 Rimas M.
+------------------------------------------------------------------------------
+- MainForm refactoring.
+- Added keyword storing in configuration file
+- Changed keyword storing logic, now keyword updated on configuration saving
+- Changed connect logic, if device is secured login is asked on every connect
+------------------------------------------------------------------------------
+  1.1.19.01 -> 1.1.19.02 2016-06-17 Igoris B.
+------------------------------------------------------------------------------
+- Fixed mantis 11646. Do not allow configure scenarios if not connected to device
+------------------------------------------------------------------------------
+  1.1.19.00 -> 1.1.19.01 2016-05-16 VB
+------------------------------------------------------------------------------
+- Fixed Active Data Link Timeout loading value.
+------------------------------------------------------------------------------
+  1.1.17.09 -> 1.1.19.00 2016-04-28 VB
+------------------------------------------------------------------------------
+- Fixed Mantis bugs.
+- Added all 1.1.18.XX branch functionality.
+- Reworked LVCAN200/ALLCAN300 selection.
+------------------------------------------------------------------------------
+  1.1.17.08 -> 1.1.17.09 2016-03-20 Pavel Detiukevič
+------------------------------------------------------------------------------
+  Added Scan function for LVCAN elements values.
+------------------------------------------------------------------------------
+  1.1.17.07 -> 1.1.17.08 2016-03-09 David O. & Rimas M. & Pavel D.
+------------------------------------------------------------------------------
+  David O. & Rimas M.  Mantis : 110018/11007/10785/10502 geofence and rs232 bugs
+  co-author Pavel D. Mantis: 11032 frame sizes bugs
+------------------------------------------------------------------------------
+  1.1.17.06 -> 1.1.17.07 2016-02-03 Deimantas A.
+------------------------------------------------------------------------------
+- Added Jamming scenario
+- Fixed Mantis bug - 10664, Bad Available bytes calculation
+- Fixed Mantis bug - 10660, Not all characters are allowed to enter
+------------------------------------------------------------------------------
+  1.1.17.05 -> 1.1.17.06 2016-02-09 MG
+------------------------------------------------------------------------------
+- 10894 Mantis bug - circle geozone switches to 180 m radius
+- 10781 mantis bug - falsly shown Rectangle Geofence priority and Generate
+  Event values.
+------------------------------------------------------------------------------
+  1.1.17.04 -> 1.1.17.05 2016-01-29 MG
+------------------------------------------------------------------------------
+- Configurator interaction with device during PIN entering improved
+------------------------------------------------------------------------------
+  1.1.17.03 -> 1.1.17.04 2016-01-14 PK
+------------------------------------------------------------------------------
+- Fixed Mantis bug - 0010709, GPRS APN Textboxes parsing 
+------------------------------------------------------------------------------
+  1.1.17.02 -> 1.1.17.03 2015-12-04 VLR
+------------------------------------------------------------------------------
+- Fix in navigation menu: http://192.168.3.6/mantisbt/view.php?id=10520
+- Fix in GeofencingControl
+------------------------------------------------------------------------------
+  1.1.17.01 -> 1.1.17.02 2015-11-26 VLR
+------------------------------------------------------------------------------
+- Streamlined multiple events in MainForm grid-menu: http://192.168.3.6/mantisbt/view.php?id=10500; http://192.168.3.6/mantisbt/view.php?id=10501
+------------------------------------------------------------------------------
+  1.1.17.00 -> 1.1.17.01 2015-11-13 VB
+------------------------------------------------------------------------------
+- Fixed Mantis bug - 10447.
+------------------------------------------------------------------------------
+  1.1.16.00 -> 1.1.17.00 2015-11-02 VB
+------------------------------------------------------------------------------
+- Fixed Mantis bugs, changed version, added new enum for LVCAN IO elements.
+------------------------------------------------------------------------------
+  1.1.15.12 -> 1.1.16.00 2015-10-21 VB
+------------------------------------------------------------------------------
+- Added new parameters to P:SModes string: MinSpeed, MinSpeedSource.
+------------------------------------------------------------------------------
+  1.1.15.11 -> 1.1.15.12 2015-10-16 VLR
+------------------------------------------------------------------------------
+- Reduced domain lenght to 31 symbol as in firmware
+------------------------------------------------------------------------------
+  1.1.15.10 -> 1.1.15.11 2015-10-07 VLR
+------------------------------------------------------------------------------
+- Changed regex in InfoResponse
+------------------------------------------------------------------------------
+  1.1.15.09 -> 1.1.15.10 2015-09-30 VLR
+------------------------------------------------------------------------------
+- Changed regex in InfoResponse
+------------------------------------------------------------------------------
+  1.1.15.08 -> 1.1.15.09 2015-09-29 Rimas M.
+------------------------------------------------------------------------------
+- Updated Teltonika.MapControl.
+- Refactored GeofencingUserControl interaction witn Teltonika.MapControl
+------------------------------------------------------------------------------
+  1.1.15.07 -> 1.1.15.08 2015-09-29 VLR
+------------------------------------------------------------------------------
+- Changed regex in InfoResponse
+------------------------------------------------------------------------------
+  1.1.15.06 -> 1.1.15.07 2015-09-28 VLR
+------------------------------------------------------------------------------
+- Locking panel list and simpleCfgControl while port is busy.
+------------------------------------------------------------------------------
+  1.1.15.04 -> 1.1.15.06 2015-09-28 VLR
+------------------------------------------------------------------------------
+- Changes in LLS Parameter mapping
+------------------------------------------------------------------------------
+  1.1.15.04 -> 1.1.15.05 2015-09-25 VLR
+------------------------------------------------------------------------------
+- Specified Geofencing and Autogeofencing parameter binding
+------------------------------------------------------------------------------
+  1.1.15.03 -> 1.1.15.04 2015-09-24 Laurynas L.
+------------------------------------------------------------------------------
+- Added Offline HardwareRevision
+- Added support for switching to Offline revision
+- Added hiding of RS settings
+------------------------------------------------------------------------------
+  1.1.15.02 -> 1.1.15.03 2015-09-23 VLR
+------------------------------------------------------------------------------
+- Fixed bytes available calculation
+- Fixed LVCAN parsing	
+- Hidden display of RFID and all LLS I/O elements when FM1125 is connected
+- Enlarged toleranse in double & decimal comparer
+- Added .info command parser used to dispay firmvare version with revision
+------------------------------------------------------------------------------
+  1.1.15.01 -> 1.1.15.02 2015-09-21 Laurynas L.
+------------------------------------------------------------------------------
+- Fixed incorrect default values
+- Fixed AutoGeofence active value not set
+- Fixed Enabled (LvCan/IO) not updated after loading configuration
+------------------------------------------------------------------------------
+  1.1.15.00 -> 1.1.15.01 2015-09-10 Laurynas L.
+------------------------------------------------------------------------------
+- Fixed Sms Event Order.
+------------------------------------------------------------------------------
+  1.1.13.14 -> 1.1.15.00 2015-09-10 Laurynas L.
+------------------------------------------------------------------------------
+- New configurator (compatibility with 1.01.11.XX).
+------------------------------------------------------------------------------
+  1.1.13.13 -> 1.1.13.14 2015-09-10 Rimas M.
+------------------------------------------------------------------------------
+- Added restriction to change configuration while port operation is performed 
+  (while port is busy).
+- Added SMS events visibility control by hardware version.
+------------------------------------------------------------------------------
+  1.1.13.12 -> 1.1.13.13 2015-09-09 Rimas M.
+------------------------------------------------------------------------------
+- Fixed DOUT2/AIN2 visibility bug when FM1125 is connected.
+- Changed I/O visibility function - all I/O are visible when device is 
+  disconnected. Only available I/O are visible when device is connected.
+------------------------------------------------------------------------------
+  1.1.13.11 -> 1.1.13.12 2015-08-21 Laurynas L.
+------------------------------------------------------------------------------
+- Fixed DOUT2 problems
+------------------------------------------------------------------------------
+  1.1.13.10 -> 1.1.13.11 2015-08-21 Vyacheslav B.
+------------------------------------------------------------------------------
+- Updated GeofenceUserControll
+- Added MapControl project
+------------------------------------------------------------------------------
+  1.1.13.9 -> 1.1.13.10 2015-08-20 Laurynas L.
+------------------------------------------------------------------------------
+- Fixed bug #10000 Missing DOUT2 for FM1125, Parity settings, Garmin mode data link timeout
+------------------------------------------------------------------------------
+  1.1.13.8 -> 1.1.13.9 2015-08-10 Rimas M.
+------------------------------------------------------------------------------
+- Fixed LvCan response parsing
+------------------------------------------------------------------------------
+  1.1.13.7 -> 1.1.13.8 2015-08-10 Rimas M.
+------------------------------------------------------------------------------
+- Added save to .bin support for RS232, RS485, IO, Sms event parameters
+------------------------------------------------------------------------------
+  1.1.13.6 -> 1.1.13.7 2015-08-05 Rimas M.
+------------------------------------------------------------------------------
+- Fixed RS232 parameter saving
+- Changed RS baudrate from 10400 to 14400
+- Added support for hardware revision B3, E3, G2, G3
+- Refactored HardwareRevision, IoElement classes
+------------------------------------------------------------------------------
+  1.1.13.3 -> 1.1.13.6 2015-08-04 Rimas M.
+------------------------------------------------------------------------------
+- Fixed default profile smsevent ID:66 value
+- Added RS485 settings save/load functions
+- Added RS485->LLS sensors request
+- Changed RS485->LLS->Clear button to Rescan
+- Added LLS sensors scan request
+------------------------------------------------------------------------------
+  1.1.13.2 -> 1.1.13.3 2015-07-30 Rimas M.
+------------------------------------------------------------------------------
+- Fixed Trip/Ignition Off timeout bindings
+- Temporary removed RS485Settings from profile.HasData
+- Fixed IO calculator
+- Changed RS settings layout
+- Removed Garmin multipacket configuration parameter
+------------------------------------------------------------------------------
+  1.1.13.1 -> 1.1.13.2 2015-07-29 Rimas M.
+------------------------------------------------------------------------------
+- Added missing sms event elements to default configuration file.
+------------------------------------------------------------------------------
+  1.1.13.0 -> 1.1.13.1 2015-07-29 Laurynas L.
+------------------------------------------------------------------------------
+- Temporarily removed RS485.
+------------------------------------------------------------------------------
+  1.1.12.6 -> 1.1.13.0 2015-07-27 Rimas M.
+------------------------------------------------------------------------------
+- Added RS232/RS485 settings UI
+------------------------------------------------------------------------------
+  1.1.12.5 -> 1.1.12.6 2015-07-20 Rimas M.
+------------------------------------------------------------------------------
+- Freezed IO and LVCAN header rows.
+- Moved all enum localization to Common lib.
+- Minor weektime control layout changes.
+------------------------------------------------------------------------------
+  1.1.12.4 -> 1.1.12.5 2015-07-08 Rimas M.
+------------------------------------------------------------------------------
+- Added BindingSource registration in ConfigurationPanelUserControl user control.
+  Create SetDataBinding method to simplify setting controls data binding.
+  Refactored all derived user controls to use new methods.
+- Moved Auto Geofence to separate configuration panel.
+- Adjusted configuration panels to fit in 1024x736 window size
+- Fixed bug when Trip->Io Elements button was not working.
+- Refactored BytesAvailableCalculator - create update method for updating value
+  and AvailableBytesChanged event.
+- Available bytes label moved to menu tool strip.
+- Added Geofence eventual record size into available byte calculation
+- Changed available byte calculation algorithm - only largest eventual io size
+  is added instead of all eventual IO, because only one eventual IO can occur
+  at time.
+- Refactored controls availability algorithm.
+- Save profile function will be disabled while there is not enough available
+  bytes (available bytes less than 0).
+- Fixed main windows status strip bar size to 25px heigth.
+- Refactored Reset procedure:
+  Removed .clr_reset_reg request which was sent before .reset request.
+  Removed .reset request response "CPU reset has been initiated" check.
+  Added 50ms delay, after .reset request is sent, before closing port.
+  Reset is considered successfull if .uptime after .reset is < .uptime before 
+  .reset
+  Reset delay after port is closed reduced to 10s
+------------------------------------------------------------------------------
+  1.1.12.3 -> 1.1.12.4 2015-06-25 Rimas M.
+------------------------------------------------------------------------------
+- Changed IO parameter IDs
+- Fixed EventNum parameter mapping
+------------------------------------------------------------------------------
+  1.1.12.2 -> 1.1.12.3 2015-06-25 Rimas M.
+------------------------------------------------------------------------------
+- Fixed configuration parameter ID mapping.
+------------------------------------------------------------------------------
+  1.1.12.1 -> 1.1.12.2 2015-06-22 Rimas M.
+------------------------------------------------------------------------------
+- Fixed Io/LvCan parameter parsing bug
+------------------------------------------------------------------------------
+  1.1.12.0 -> 1.1.12.1 2015-06-21 Rimas M.
+------------------------------------------------------------------------------
+- Added LvCan configuration, LvCan now is processed same as IO
+- Added LvCan SMS event configuration
+- Refactored Reset function to use .uptime response instead of reset cause
+------------------------------------------------------------------------------
+  1.1.11.25 -> 1.1.12.0 2015-06-17 Rimas M.
+------------------------------------------------------------------------------
+- Removed AutoGeofence "activate" paramter, instead added priority "disabled".
+- Removed IO "enable" configuration sending, instead priority field is used.
+------------------------------------------------------------------------------
+  1.1.11.24 -> 1.1.11.25 2015-06-15 Rimas M.
+------------------------------------------------------------------------------
+- Modified records reading, added retry (max 3 retries for each data block) 
+  function.
+------------------------------------------------------------------------------
+  1.1.11.23 -> 1.1.11.24 2015-06-10 Rimas M.
+------------------------------------------------------------------------------
+- Increased WaitConfSecurityResponseTimeout up to 10s
+------------------------------------------------------------------------------
+  1.1.11.22 -> 1.1.11.23 2015-06-10 Vyacheslav B.
+------------------------------------------------------------------------------
+- Fixed configurator Menu problem (navigationBindingSource_CurrentItemChanged())
+------------------------------------------------------------------------------
+  1.1.11.21 -> 1.1.11.22 2015-06-04 Vyacheslav B.
+------------------------------------------------------------------------------
+- Fixed bug #9707 (FM11 1.1.11.21 configurator Menu problemos)
+------------------------------------------------------------------------------
+  1.1.11.20 -> 1.1.11.21 2015-05-29 Rimas M.
+------------------------------------------------------------------------------
+- ReadParametersTimeout increased to 20s
+------------------------------------------------------------------------------
+  1.1.11.19 -> 1.1.11.20 2015-05-28 Rimas M.
+------------------------------------------------------------------------------
+- ReadParametersTimeout increased to 10s
+------------------------------------------------------------------------------
+  1.1.11.18 -> 1.1.11.19 2015-05-26 VLR
+------------------------------------------------------------------------------
+- Separated GSM SMS numbers and SMS Events panels
+------------------------------------------------------------------------------
+  1.1.11.17 -> 1.1.11.18 2015-05-22 Julius G.
+------------------------------------------------------------------------------
+- Removed several unused Protocol responses
+------------------------------------------------------------------------------
+  1.1.11.16 -> 1.1.11.17 2015-04-14 Julius G.
+------------------------------------------------------------------------------
+- Changed server response minimum value to 30s
+------------------------------------------------------------------------------
+  1.1.11.15 -> 1.1.11.16 2015-04-14 Julius G.
+------------------------------------------------------------------------------
+- Improved profile reading reliability
+------------------------------------------------------------------------------
+  1.1.11.14 -> 1.1.11.15 2015-04-14 Julius G.
+------------------------------------------------------------------------------
+- In Scenarios hiding Dout2 configuration for hardware without 1-Wire
+    (bug #9398)
+- Merged with 1.1.10.36 to include new ReadProfile()
+- Fixed bug #9511 (SMS Event numbers not refreshing in drop downs)
+- Fixed iButton parser Default value
+- Fixed Verification to compare with read profile
+- Fixed LVCAN Data order (bug #9455)
+- Added response to SetDefaultSmsEventsRequest
+- Changed SMS Event 25 default text to Ignition
+------------------------------------------------------------------------------
+  1.1.11.13 -> 1.1.11.14 2015-04-08 VLR
+------------------------------------------------------------------------------
+- IO element Reserved(1) changed to Ignition
+------------------------------------------------------------------------------
+  1.1.11.12 -> 1.1.11.13 2015-03-23 Julius G.
+------------------------------------------------------------------------------
+- Added Enable all to IoUserControl
+- Bugfix #9386:
+    Fixed IO defaults.xml
+    Added IO High/Low validation
+- Bugfix #9388:
+    WriteParametersTimeout 5000 -> 10000
+    Clear() Profile instead of RejectChanges() when reading
+- Bugfix #9381 (changed SMS Event configuration to be based on WPF)  		
+------------------------------------------------------------------------------
+  1.1.11.11 -> 1.1.11.12 2015-02-23 Julius G.
+------------------------------------------------------------------------------
+- Fixed IoElement NumericUpDowns not setting to disabled
+------------------------------------------------------------------------------
+  1.1.11.10 -> 1.1.11.11 2015-02-20 Julius G.
+------------------------------------------------------------------------------
+- Merge with v1.1.10.34
+- Bugfix #9260 (disabled P:VersionParser:)
+------------------------------------------------------------------------------
+  1.1.11.9 -> 1.1.11.10 2015-02-20 VLR
+------------------------------------------------------------------------------
+- http://192.168.3.6/mantisbt/view.php?id=9192 (High/Low IntegerUpDown changed to DecimalUpDown)
+------------------------------------------------------------------------------
+  1.1.11.8 -> 1.1.11.9 2015-02-09 VLR
+------------------------------------------------------------------------------
+- http://192.168.3.6/mantisbt/view.php?id=9192 (Prohibition of comma and period characters in High/Low values of IO)
+------------------------------------------------------------------------------
+  1.1.11.7 -> 1.1.11.8 2015-02-04 Julius G.
+------------------------------------------------------------------------------
+- Merge with v1.1.10.32.
+- Redid some LvCanData functionality
+- Added LvCan parameters to FmParameterMapping
+- FmParameterMapping changed to FM11YX values
+- Added Ignition Source to System (FM11YX)
+- Updated translation files
+------------------------------------------------------------------------------
+  1.1.11.6 -> 1.1.11.7 2015-02-03 Julius G.
+------------------------------------------------------------------------------
+- Added new HardwareRevision descriptions and parsing
+- Implemented HardwareRevision for Io Elements
+- Added additional IO elements for FM11YX
+- Added additional SMS Events
+- Changed BytesAvailable to BytesAvailableCalculator
+- Changed convention for describing IO element size
+- Renamed most of FMS into LvCan
+------------------------------------------------------------------------------
+  1.1.11.5 -> 1.1.11.6 2014-12-08 Julius G.
+------------------------------------------------------------------------------
+- Improved IoUserControl performance by creating element host during init
+------------------------------------------------------------------------------
+  1.1.11.4 -> 1.1.11.5 2014-11-21 Julius G.
+------------------------------------------------------------------------------
+- Fixed LVCAN Data parser (bug #8858)
+- Fixed SMS Event defaults
+- Fixed SMS Event allowing to save null values (bug #8862)
+- Changed IOUserControl into IoUserControlShell, added WPF IoUserControl to
+    improve performance (bug #8852)
+------------------------------------------------------------------------------
+  1.1.11.3 -> 1.1.11.4 2014-11-04 Julius G.
+------------------------------------------------------------------------------
+- Improved localization support
+------------------------------------------------------------------------------
+  1.1.11.2 -> 1.1.11.3 2014-11-04 Julius G.
+------------------------------------------------------------------------------
+- Disabled Averaging Constant for most of IO
+- Renamed GPS IO elements to GNSS IO elements
+- Repositioned IO Bytes Available
+------------------------------------------------------------------------------
+  1.1.11.1 -> 1.1.11.2 2014-10-30 Julius G.
+------------------------------------------------------------------------------
+- Fixed LVCAN Priority values
+- Added ability to disable averaging constant in IO
+- Fixed LVCAN Program Number size
+------------------------------------------------------------------------------
+  1.1.11.0 -> 1.1.11.1 2014-10-30 Julius G.
+------------------------------------------------------------------------------
+- Changed IO configuration
+- Moved SMS Event configuration
+- Changes in FMS
+- Added Program Number to FMS
+- Removed remaining SMS Event controls
+------------------------------------------------------------------------------
+  1.1.10.14 -> 1.1.11.0 2014-10-17 Julius G.
+------------------------------------------------------------------------------
+- Added LV-CAN (merge with 1.43.0.9)
+------------------------------------------------------------------------------
+  1.1.10.13 -> 1.1.10.14 2014-10-17 Julius G.
+------------------------------------------------------------------------------
+- Small fixes for bin file reading
+------------------------------------------------------------------------------
+  1.1.10.12 -> 1.1.10.13 2014-10-16 Julius G.
+------------------------------------------------------------------------------
+- Fixed IButtonListUserControl.EndEdit() (bug #8799 related)
+------------------------------------------------------------------------------
+  1.1.10.11 -> 1.1.10.12 2014-10-15 Julius G.
+------------------------------------------------------------------------------
+- Moved InsertRow to Profile
+- Added ParameterType
+------------------------------------------------------------------------------
+  1.1.10.10 -> 1.1.10.11 2014-10-07 Julius G.
+------------------------------------------------------------------------------
+- Fixed BytesAvailable not working due to app.config changes.
+------------------------------------------------------------------------------
+  1.1.10.9 -> 1.1.10.10 2014-09-26 Julius G.
+------------------------------------------------------------------------------
+- Added BytesAvailable fix.
+------------------------------------------------------------------------------
+  1.1.10.8 -> 1.1.10.9 2014-09-11 Julius G.
+------------------------------------------------------------------------------
+- Removed CodeVersionReceived stuff (not used)
+- Removed couple of unused garbage items fro UI
+- Resourcified few more hardcoded strings
+- Changed all port EventHandlers in MainForm to use Invoke to fix
+    localization issues caused by ThreadPool usage
+- Few fixes in user controls
+------------------------------------------------------------------------------
+  1.1.10.7 -> 1.1.10.8 2014-09-09 Julius G.
+------------------------------------------------------------------------------
+- Removed SimpleCfg.png, replaced it with 4 different images and localizable
+    text
+------------------------------------------------------------------------------
+  1.1.10.6 -> 1.1.10.7 2014-09-08 Julius G.
+------------------------------------------------------------------------------
+- Renamed IO smsEventUserControl for better code readability
+- Added ComboBoxExtensions, implemented dynamic sizing for DropDowns
+- Added ru translations to main project
+------------------------------------------------------------------------------
+  1.1.10.5 -> 1.1.10.6 2014-09-05 Julius G.
+------------------------------------------------------------------------------
+- Removed several useless Text values from resources.
+- Redesigned certain controls to allow for dynamic sizing when localized.
+------------------------------------------------------------------------------
+  1.1.10.4 -> 1.1.10.5 2014-09-04 Julius G.
+------------------------------------------------------------------------------
+- Added loading of .bin files
+------------------------------------------------------------------------------
+  1.1.10.3 -> 1.1.10.4 2014-09-03 Julius G.
+------------------------------------------------------------------------------
+- Renamed most of the controls to have unique names
+- Moved a lot of hardcoded strings to Resources
+- Removed OperatorTimeStep from OperatorListUserControl.cs
+- Removed IoSection from App.Config
+- Removed several unused classes/forms
+- Changed Forms and UserControls to be localizable.
+- Removed some unused resources.
+------------------------------------------------------------------------------
+  1.1.10.3 -> 1.1.10.4 2014-09-01 Julius G.
+------------------------------------------------------------------------------
+- Added saving profile to .bin file for remote configuration.
+------------------------------------------------------------------------------
+  1.1.10.2 -> 1.1.10.3 2014-07-14 Julius G.
+------------------------------------------------------------------------------
+- Fixed :CFG_Connect: not working after login (#8409 related).
+------------------------------------------------------------------------------
+  1.1.10.1 -> 1.1.10.2 2014-06-20 Julius G.
+------------------------------------------------------------------------------
+- Updated base to 1.1.7.44 (Lib change).
+------------------------------------------------------------------------------
+  1.1.10.0 -> 1.1.10.1 2014-06-13 Rimas M.
+------------------------------------------------------------------------------
+- Fixed GNSS verification
+------------------------------------------------------------------------------
+  1.1.7.43 -> 1.1.10.0 2014-06-12 Julius G.
+------------------------------------------------------------------------------
+- Added GNSS to System.
+- Fixed NavigationToIoUserControl in MainForm.
+- Cleaned up SystemUserControl.
+------------------------------------------------------------------------------
+  1.1.7.42 -> 1.1.7.43 2014-05-30 Julius G.
+------------------------------------------------------------------------------
+- Added HardwareRevision.
+- Removed obsolete Green Driving functionality.
+- Cleaned up ScenariosUserControl.
+------------------------------------------------------------------------------
+  1.1.7.41 -> 1.1.7.42 2014-03-06 Laurynas L.
+------------------------------------------------------------------------------
+- Changed simple configuration image.
+------------------------------------------------------------------------------
+  1.1.7.40 -> 1.1.7.41 2014-03-06 Laurynas L.
+------------------------------------------------------------------------------
+- Added simple configuration support.
+------------------------------------------------------------------------------
+  1.1.7.38 -> 1.1.7.39 2014-02-24 JuliusG
+------------------------------------------------------------------------------
+- Changed corrupted SMS event value handling to search for
+    S:SMS_Event:255,255,255 (related to bug #7926);
+------------------------------------------------------------------------------
+  1.1.7.37 -> 1.1.7.38 2014-02-17 Median
+------------------------------------------------------------------------------
+- RegEx bug.
+------------------------------------------------------------------------------
+  1.1.7.36 -> 1.1.7.37 2014-02-05 JuliusG
+------------------------------------------------------------------------------
+- Tweaked verification;
+------------------------------------------------------------------------------
+  1.1.7.35 -> 1.1.7.36 2013-12-19 JuliusG
+------------------------------------------------------------------------------
+- Added verification logging;
+------------------------------------------------------------------------------
+  1.1.7.34 -> 1.1.7.35 2013-12-16 JuliusG
+------------------------------------------------------------------------------
+- Fixed Trip not having SMS Event EndEdit() (Bug #7738 related);
+------------------------------------------------------------------------------
+  1.1.7.33 -> 1.1.7.34 2013-12-09 JuliusG
+------------------------------------------------------------------------------
+- Fixed double numbers verification to round up instead of truncating;
+- GlobalPacketResponseReadTimeout 2000 -> 10000;
+------------------------------------------------------------------------------
+  1.1.7.32 -> 1.1.7.33 2013-11-25 JuliusG
+------------------------------------------------------------------------------
+- In OperatorListUserControl.cs not allowing to save operator codes with
+    leading zeroes;
+- Refactored OperatorListUserControl.cs a bit;
+------------------------------------------------------------------------------
+  1.1.7.31 -> 1.1.7.32 2013-11-11 JuliusG
+------------------------------------------------------------------------------
+- Fix for verification crash by clearing databindings.
+------------------------------------------------------------------------------
+  1.1.7.30 -> 1.1.7.31 2013-10-24 Rimas.M
+------------------------------------------------------------------------------
+- Fixed http://192.168.3.6/mantisbt/view.php?id=7546
+------------------------------------------------------------------------------
+  1.1.7.29 -> 1.1.7.30 2013-10-21 Rimas.M
+------------------------------------------------------------------------------
+- Added verification after profile is saved 
+- Changed logging, FileAppender replaces with RollingFileAppender, max file
+    size 10MB, max file count 5
+- Set DeviceSelectionForm owner (mainform), set position center parent;
+------------------------------------------------------------------------------
+  1.1.7.28 -> 1.1.7.29 2013-08-06 JuliusG
+------------------------------------------------------------------------------
+- Hidden "Get Gprs Configuration";
+- Changed Default StaticNavigation 1 -> 0;
+------------------------------------------------------------------------------
+  1.1.7.27 -> 1.1.7.28 2013-07-16 JuliusG
+------------------------------------------------------------------------------
+- Added "Get Gprs Configuration";
+------------------------------------------------------------------------------
+  1.1.7.26 -> 1.1.7.27 2013-07-04 Julius R.
+------------------------------------------------------------------------------
+- All Min. Period values in default set to 600
+------------------------------------------------------------------------------
+  1.1.7.25 -> 1.1.7.26 2013-06-20 Julius R.
+------------------------------------------------------------------------------
+- Added check, if Profile settings was correctly saved in FM's memory
+------------------------------------------------------------------------------
+  1.1.7.24 -> 1.1.7.25 2013-06-12 JuliusG
+------------------------------------------------------------------------------
+- Fixed ProfileParseInvoker logging;
+- Fixed exception logging in few other places;
+------------------------------------------------------------------------------
+  1.1.7.23 -> 1.1.7.24 2013-06-05 JuliusG
+------------------------------------------------------------------------------
+- Fix for Scenarios to always display Green Driving. Changes for file
+    loading/saving and control bindings, automatic param conversion;
+- Removed HW version from MainForm;
+------------------------------------------------------------------------------
+  1.1.7.22 -> 1.1.7.23 2013-04-25 Julius
+------------------------------------------------------------------------------
+- Reduced excessive TryPingPort() logging;
+- Fixed exception logging via LogError() in GpsSerialPort;
+- Refactored ParserID to use enumeration;
+------------------------------------------------------------------------------
+  1.1.7.21 -> 1.1.7.22 2013-03-12 Julius
+------------------------------------------------------------------------------
+- AfterResetInitiatedTimeout 10000 -> 20000 (related to #5609, #6008,
+    #6063);
+- WaitRecordsDataTimeout 2000 -> 5000;
+- Fixed Autogeofencing SMS to have separate BindingContext from
+    Geofencing SMS (related to Bug #5973);
+------------------------------------------------------------------------------
+  1.1.7.20 -> 1.1.7.21 2013-02-08 Julius
+------------------------------------------------------------------------------
+- Fixed navigation to IO;
+------------------------------------------------------------------------------
+  1.1.7.19 -> 1.1.7.20 2012-12-27 Julius
+------------------------------------------------------------------------------
+- Merged with 1.1.6.24 changes (added SMS Event over TCP config);
+- Added DismissTS to TCP Listener;
+- Added 3 sec delay before sending last packet ack in TCP Listener;
+------------------------------------------------------------------------------
+  1.1.7.18 -> 1.1.7.19 2012-12-19 Julius
+------------------------------------------------------------------------------
+- Fixed GreenDriving Slider Binding Format;
+------------------------------------------------------------------------------
+  1.1.7.17 -> 1.1.7.18 2012-12-13 Julius
+------------------------------------------------------------------------------
+- Changed Bytes Available calculation to be static;
+------------------------------------------------------------------------------
+  1.1.7.16 -> 1.1.7.17 2012-12-12 Julius
+------------------------------------------------------------------------------
+- Fixed empty iButton entering (no need to enter empty value);
+------------------------------------------------------------------------------
+  1.1.7.15 -> 1.1.7.16 2012-12-04 Julius
+------------------------------------------------------------------------------
+- Fixed P:SSystem: default parsing value;
+- DeviceFlashingTimeout 3000 -> 6000;
+- Fixed ToolStrip Seperators;
+------------------------------------------------------------------------------
+  1.1.7.14 -> 1.1.7.15 2012-11-27 Julius
+------------------------------------------------------------------------------
+- Bugfix #5354 (allowed SIM PIN length 4 -> 8 digits);
+- Backspace now works in SIM PIN window;
+------------------------------------------------------------------------------
+  1.1.7.13 -> 1.1.7.14 2012-11-21 Julius
+------------------------------------------------------------------------------
+- Fixed Green Driving size 4 -> 5 (ID included);
+------------------------------------------------------------------------------
+  1.1.7.12 -> 1.1.7.13 2012-11-20 Julius
+------------------------------------------------------------------------------
+- Bugfix #5074 (added GreenDriving parameter sliders);
+- Bugfix #5334 (fixed SMSUserControl Columns when pasting);
+------------------------------------------------------------------------------
+  1.1.7.11 -> 1.1.7.12 2012-11-08 Julius
+------------------------------------------------------------------------------
+- Configuration won't be sent, if SMS, Operators, or iButtons have invalid
+    values;
+------------------------------------------------------------------------------
+  1.1.7.10 -> 1.1.7.11 2012-11-05 Julius
+------------------------------------------------------------------------------
+- Bugfix #5188 (SMS phone number validation on loading/saving profile);
+------------------------------------------------------------------------------
+  1.1.7.9 -> 1.1.7.10 2012-11-02 Julius
+------------------------------------------------------------------------------
+- Hidden TCP Listener;
+- Changed Device Initializing text for Reading Records;
+- Added .defevt;
+- Hidden validation window;
+- Fixed P:SScenarios: parser to allow Eco Driving max values;
+- Profile is now restored after exception;
+- Fixed several spelling mistakes;
+------------------------------------------------------------------------------
+  1.1.7.8 -> 1.1.7.9 2012-10-29 Julius
+------------------------------------------------------------------------------
+- Bugfix #5086 (fixed deviceToSelect_ConnectButtonPressed for locked device)
+- Bugfix #5097 (Green Driving is now default);
+- Bugfix #5149. Fixed defaults:
+    DIN1/2/3 AvgConst 10 -> 2;
+    Movement Sensor AvgConst 10 -> 1;
+    Frame Border size 1000 -> 1;
+    Min Period Moving 600 -> 1200;
+- Bugfix #5152 (fix for null iButton list entry);
+------------------------------------------------------------------------------
+  1.1.7.7 -> 1.1.7.8 2012-10-23 Julius
+------------------------------------------------------------------------------
+- Fixed records save path;
+------------------------------------------------------------------------------
+  1.1.7.6 -> 1.1.7.7 2012-10-23 Julius
+------------------------------------------------------------------------------
+- Bugfix #5083;
+- Fixed SMS EventNumbers parsing;
+------------------------------------------------------------------------------
+  1.1.7.5 -> 1.1.7.6 2012-10-22 Julius
+------------------------------------------------------------------------------
+- Fixed predefined SMS event numbers;
+------------------------------------------------------------------------------
+  1.1.7.4 -> 1.1.7.5 2012-10-15 Julius
+------------------------------------------------------------------------------
+- Moved "Save to file" dialog before reading the records;
+------------------------------------------------------------------------------
+  1.1.7.3 -> 1.1.7.4 2012-10-12 Julius
+------------------------------------------------------------------------------
+- Bugfix #5000 (added .bin extension to records file; hiding "save to file"
+    button, if file is saved);
+------------------------------------------------------------------------------
+  1.1.7.2 -> 1.1.7.3 2012-10-12 Julius
+------------------------------------------------------------------------------
+- Fixed records reading;
+- Added records reading abort parsing;
+- Added ability to abort reacords reading;
+- Records are now being save to temporary file;
+------------------------------------------------------------------------------
+  1.1.7.1 -> 1.1.7.2 2012-10-11 Julius
+------------------------------------------------------------------------------
+- Records are now being read without garbage;
+- Added EndOfDataBlock\r\n to records;
+------------------------------------------------------------------------------
+  1.1.7.0 -> 1.1.7.1 2012-10-10 Julius
+------------------------------------------------------------------------------
+- Changed records reading;
+------------------------------------------------------------------------------
+  1.1.6.16 -> 1.1.7.0 2012-10-08 Julius
+------------------------------------------------------------------------------
+- Added Read Records functionality;
+------------------------------------------------------------------------------
+  1.1.6.15 -> 1.1.6.16 2012-10-02 Julius
+------------------------------------------------------------------------------
+- Bugfix #4877 (asking for sim pin after connect, if sim is not registered);
+- Improved navigating to specific user control category (like in FM53XX);
+------------------------------------------------------------------------------
+  1.1.6.14 -> 1.1.6.15 2012-10-01 Julius
+------------------------------------------------------------------------------
+- Added S:DismissTS parameter to System;
+------------------------------------------------------------------------------
+  1.1.6.13 -> 1.1.6.14 2012-09-28 Laurynas
+------------------------------------------------------------------------------
+- Support for configuration reading over TCP.
+------------------------------------------------------------------------------
+  1.1.6.12 -> 1.1.6.13 2012-09-26 Julius
+------------------------------------------------------------------------------
+- Changed Eco Driving parameters min/max/default values;
+- Added Defaults handling for Green Driving;
+------------------------------------------------------------------------------
+  1.1.6.11 -> 1.1.6.12 2012-09-25 Julius
+------------------------------------------------------------------------------
+- Bugfix #4914 (Ctrl+V now works in SMS Home Operator field);
+- Fixed pasting into SMS Authorized and Event Numbers;
+- Bugfix #4939 (instant validation of SMS phone numbers);
+- Bugfix #4916 (Geofencing coordinates validation fixes);
+- Bugfix #4919 (switched Longitude and Latitude in Geofencing);
+------------------------------------------------------------------------------
+  1.1.6.10 -> 1.1.6.11 2012-09-21 Julius
+------------------------------------------------------------------------------
+- Changed last profile response packet to SMS_Event:39;
+- Retry to read profile, if profile response packet count is unexpected;
+------------------------------------------------------------------------------
+  1.1.6.9 -> 1.1.6.10 2012-09-21 Julius
+------------------------------------------------------------------------------
+- Fixed P:Version parsing;
+------------------------------------------------------------------------------
+  1.1.6.8 -> 1.1.6.9 2012-09-06 Julius
+------------------------------------------------------------------------------
+- When reading corrupt SMS_Event entries, they will be replaced by defaults;
+- Removed second S:get_param request from ReadProfile();
+------------------------------------------------------------------------------
+  1.1.6.7 -> 1.1.6.8 2012-08-28 Laurynas
+------------------------------------------------------------------------------
+- Added support for recieving profiles over TCP from devices.
+- Added emulator for emulating device sending profiles over TCP.
+- MBP GPS – 20120808
+------------------------------------------------------------------------------
+  1.1.6.6 -> 1.1.6.7 2012-08-28 Laurynas
+------------------------------------------------------------------------------
+- Bugfix #4736
+- Disabled disconnect button while sending/receiving to/from device.
+- Moved SerialPort.Close from GpsSerialPort.Close to a different thread 
+  because of dead-lock.
+- Allowed for identical responses from device in ProfileParseInvoker.Fill.
+------------------------------------------------------------------------------
+  1.1.6.5 -> 1.1.6.6 2012-08-27 Julius
+------------------------------------------------------------------------------
+- Removed ConfiguratorVersion from App.config;
+------------------------------------------------------------------------------
+  1.1.6.4 -> 1.1.6.5 2012-08-01 Julius
+------------------------------------------------------------------------------
+- Fixed IO element size;
+------------------------------------------------------------------------------
+  1.1.6.3 -> 1.1.6.4 2012-07-30 Julius
+------------------------------------------------------------------------------
+- Bugfix #4604 (reading configuration with phone numbers, containing '+');
+------------------------------------------------------------------------------
+  1.1.6.2 -> 1.1.6.3 2012-07-04 Julius
+------------------------------------------------------------------------------
+- Fixed APN max length: 30 -> 32;
+- Only ASCII characters allowed in APN, APN user name, APN password, Domain, 
+  SMS login, SMS pasword;
+- Fixed Profile Read Error message box;
+------------------------------------------------------------------------------
+  1.1.6.1 -> 1.1.6.2 2012-06-26 Julius
+------------------------------------------------------------------------------
+- Reintroduced scanning for all compatible devices;
+- Better SMS Text handling (disallows pasting foreign symbols);
+- Fixed changing of DefaultProfilePath while Saving/Loading Defaults;
+- Added AboutBox;
+------------------------------------------------------------------------------
+  1.1.6.0 -> 1.1.6.1 2012-06-26 Julius
+------------------------------------------------------------------------------
+- Fixed Default SleepTMO 60 -> 1;
+------------------------------------------------------------------------------
+  1.1.5.0 -> 1.1.6.0 2012-06-25 Julius
+------------------------------------------------------------------------------
+- DEV-048;
+- Max Angular Velocity units for Green Driving rad/s -> g;
+- Maximum for Max Braking/Accelerating Force 0.84 -> 0.85;
+------------------------------------------------------------------------------
+  1.1.4.5 -> 1.1.5.0 2012-06-07 Julius
+------------------------------------------------------------------------------
+- FM11 FIX-455;
+- Fixed loading defaults in Scenarios;
+------------------------------------------------------------------------------
+  1.1.4.4 -> 1.1.4.5 2012-05-30 Julius
+------------------------------------------------------------------------------
+- Fixed 15th IO Type name <http://192.168.3.6/mantisbt/view.php?id=4415>;
+- Fixed Scenario SMS fields <http://192.168.3.6/mantisbt/view.php?id=4413>;
+- Small UI fixes;
+------------------------------------------------------------------------------
+  1.1.4.3 -> 1.1.4.4 2012-05-24 Julius
+------------------------------------------------------------------------------
+- Fixed smsEvenUserControl to udate when loading from flash
+- Fixed hanging, when device is unplugged while connected
+- Fixed non-supported SMS symbols <http://192.168.3.6/mantisbt/view.php?id=4360>
+------------------------------------------------------------------------------
+  1.1.4.2 -> 1.1.4.3 2012-05-02 Andrius
+------------------------------------------------------------------------------
+- bug fix 4333
+- po globalaus irasymo laukia patvirtinimo
+------------------------------------------------------------------------------
+  1.1.4.0 -> 1.1.4.1 2012-05-02 Andrius
+------------------------------------------------------------------------------
+- ProfileParserSmsEvent (?<text>.{0,30})->(?<text>.{0,90})
+------------------------------------------------------------------------------
+  1.1.2.9 -> 1.1.4.0 2012-05-02 Andrius
+------------------------------------------------------------------------------
+- DEV 012
+------------------------------------------------------------------------------
+  1.1.2.8 -> 1.1.2.9 2012-04-24 Andrius
+------------------------------------------------------------------------------
+- Bug fix #4283
+------------------------------------------------------------------------------
+  1.1.2.7 -> 1.1.2.8 2012-04-24 Andrius
+------------------------------------------------------------------------------
+- Bug fix #4271
+------------------------------------------------------------------------------
+  1.1.2.6 -> 1.1.2.7 2012-03-14 Andrius
+------------------------------------------------------------------------------
+- Scenarios->maxAccForceNumericUpDown max 0.7->0.84
+- Scenarios->maxBrakForceNumericUpDown max 0.7->0.84
+------------------------------------------------------------------------------
+  1.1.2.5 -> 1.1.2.6 2012-03-06 Rimas
+- Fixed geozone loading bug <http://192.168.3.6/mantisbt/view.php?id=4156>
+------------------------------------------------------------------------------
+  1.1.2.4 -> 1.1.2.5 2012-03-05 Andrius
+------------------------------------------------------------------------------
+- Settings->Sleep Mode-> remove Sleep
+------------------------------------------------------------------------------
+  1.1.2.3 -> 1.1.2.4 2012-03-05 Andrius
+------------------------------------------------------------------------------
+- SMS->authorized phone numbers bug
+------------------------------------------------------------------------------
+  1.1.2.2 -> 1.1.2.3 2012-03-05 Andrius
+------------------------------------------------------------------------------
+- ReadProfileTimeout 1000->2000
+- DeviceFlashingTimeout 1000->3000
+------------------------------------------------------------------------------
+  1.1.2.1 -> 1.1.2.2 2012-03-01 Andrius
+------------------------------------------------------------------------------
+- WaitConnectTimeout 650-> 1500;
+------------------------------------------------------------------------------
+  1.1.1.7 -> 1.1.2.1 2012-03-01 Andrius
+------------------------------------------------------------------------------
+- kai paspaudi LOAD DEFAULTS -> Geofencing (1 Zona, Priority nustato High (1) by default). Turetu buti Low (0).
+------------------------------------------------------------------------------
+  1.1.1.6 -> 1.1.1.7 2012-03-01 Andrius
+------------------------------------------------------------------------------
+- Bug fix #4144
+------------------------------------------------------------------------------
+  1.1.1.4 -> 1.1.1.5 2012-01-17 Andrius
+------------------------------------------------------------------------------
+- System.Sleep Mode: add Deep Sleep
+------------------------------------------------------------------------------
+  1.1.1.3 -> 1.1.1.4 2011-11-30 Andrius
+------------------------------------------------------------------------------
+- System.Deep Sleep Mode: (Disabled/Enabled)->(Off/On)
+- SModes.Min Saved records changed default values
+- Scenarios.Out1scenario defalut 1->0; MaxAllowedSpeed 90->0; Out2scenario 2->0
+- ScenarioUserControl.maxAccForceNumericUpDown, maxBrakForceNumericUpDown max 0.85->0.7 
+- Sms.Timeout default 60->0
+- IO.GenerateEvent default 10->0
+------------------------------------------------------------------------------
+  1.1.0.2 -> 1.1.1.3 2011-11-23 Andrius
+------------------------------------------------------------------------------
+- Bug fix #3756
+------------------------------------------------------------------------------
+  1.1.0.1 -> 1.1.1.2 2011-11-15 Andrius
+------------------------------------------------------------------------------
+- Bug fix #3736
+------------------------------------------------------------------------------
+  1.1.0.17 -> 1.1.1.1 2011-11-11 Rimas
+------------------------------------------------------------------------------
+- Bug fix #3693
+- Added iButtonId list, phone number list, operator list copy/paste compatibility
+------------------------------------------------------------------------------
+  1.1.0.16 -> 1.1.0.17
+------------------------------------------------------------------------------
+- Increased "Home Operator Code" length to 7 (same as Operator code length)
+------------------------------------------------------------------------------
+  1.0.5.14 -> 1.1.0.16
+------------------------------------------------------------------------------
+- System parameter changes:
+    * Added new parameter "Static Navigation"
+    * Now there are 5 reserved parameters
+    * Added last parameter which is string of any type (max length 25). 
+        Its input field is created though hidden.
+------------------------------------------------------------------------------
+  1.0.5.13 -> 1.0.5.14
+------------------------------------------------------------------------------
+- Increased operator code lengh from 5 to 7
+- Changed GSM>GPRS "IP" field name to "Domain", removed IP check, extended
+    field to 50 symbol lenght
+- Added "Code" to Unlock form
+------------------------------------------------------------------------------
+  1.0.5.12 -> 1.0.5.13
+------------------------------------------------------------------------------
+- Changed packets send logic, each packet is splited to characters before 
+    sending
+------------------------------------------------------------------------------
+  1.0.5.11 -> 1.0.5.12
+------------------------------------------------------------------------------
+- Changed Scenarios>Max Cornering Angle (int) -> Max Angular Velocity 
+    (float) [0.10-1.00], default value: 0.30
+- Changed Scenarios>Max Acceleration/Braking Force unit labes [g]'s -> g 
+    with tooltip '9.806 m/s²'
+- Removed IO generate event - 'On Level'
+------------------------------------------------------------------------------
+  1.0.5.10 -> 1.0.5.11
+------------------------------------------------------------------------------
+  * Changed Scenario>Greendriving value interval and default values:
+  - acceleration force [0.25-0.85] default: 0.25
+  - braking force [0.25-0.85] default: 0.35
+  - cornering [0-255] default: 23
+  - max speed [0-260] default: 90
+- Fixed unlock
+- Fixed APN, username, password parsing.
+------------------------------------------------------------------------------
+  1.0.5.8 -> 1.0.5.10
+------------------------------------------------------------------------------
+- Changed APN user name and password lenght from 6 to 30
+- Added Teltonika logo
+------------------------------------------------------------------------------
+  1.0.5.7 -> 1.0.5.8
+------------------------------------------------------------------------------
+- Fixed bug when entering valid unlock code invalid notification where shown
+------------------------------------------------------------------------------
+  1.0.5.5 -> 1.0.5.6
+------------------------------------------------------------------------------
+- Fixed System>PowerMode parameter load.
+- Removed profile number in notifications.
+- Fixed navigation to System page at configurator start
+------------------------------------------------------------------------------
+  1.0.5.5 -> 1.0.5.6
+------------------------------------------------------------------------------
+- Added security chech after device reset
+-----------------------------------------------------------------------------
+  1.0.5.4 -> 1.0.5.5
+------------------------------------------------------------------------------
+- Fixed numericUpDown validation, allowed complete erasure of values
+ -----------------------------------------------------------------------------
+  1.0.5.3 -> 1.0.5.4
+------------------------------------------------------------------------------
+- Changed load from flash shortcut from f9 to f1
+- Changed save to flash shortcut from f5 to ctrl+f1
+- Added more detailed instruction what to do when device is not found
+------------------------------------------------------------------------------
+  1.0.5.2 -> 1.0.5.3
+------------------------------------------------------------------------------
+- Added notification message "Device not found"
+- Removed SMS data sending settings control lock when settings are disabled
+- Changed default data acquisition modes gps week time values
+- Added SMS data sending notification when enabled 1st number - Server Number
+------------------------------------------------------------------------------
+  1.0.5.1 -> 1.0.5.2
+------------------------------------------------------------------------------
+- Added new I/O element: Dallas Temperature
+------------------------------------------------------------------------------
+  1.0.5.0 -> 1.0.5.1
+------------------------------------------------------------------------------
+- Changed iButton ID sending and receiving mechanism, now configurator 
+    performs iButton ID reverse before sending and after receiving iButton ID.
+- Added informative iButton image. 
+------------------------------------------------------------------------------
+  1.0.4.0 -> 1.0.5.0
+------------------------------------------------------------------------------
+- Fixed bug then items in edit mode in operatorgrid and ibuttongrid wasnt
+    sending to FM.
+- Changed Records timeout type from byte to UInt32
+- Changed Data acquisition modes min saved records min value from 0 to 1
+- Changed IO averaging constant type from Int32 to UInt32
+- Improved numericUpDown fields validation, now you can't enter empty value,
+    added minimum-maximum value validation on value changed
+- Added notification that configurator can't get IMEI from FM when trying to 
+    establish connection.
+- Fixed bug when connect buttun disables after login timeout, added
+    notification.
+------------------------------------------------------------------------------
+  1.0.3.0 -> 1.0.4.0
+------------------------------------------------------------------------------
+- Added additional Trip parameter (not used on this version)
+
+------------------------------------------------------------------------------
+  1.0.3.0 -> 1.0.3.1
+------------------------------------------------------------------------------
+- Added I/O parameters (refer fm11.events.ID.rev.05)
+
+------------------------------------------------------------------------------
+  1.0.2.14 -> 1.0.3.0
+------------------------------------------------------------------------------
+- Added/Changed I/O parameters (refer fm11.events.ID.rev.04)
+- Changed 'SMS Week Time' to 'GPRS Week Time'
+- Improved Connect method
+
+------------------------------------------------------------------------------
+  1.0.2.13 -> 1.0.2.14
+------------------------------------------------------------------------------
+- Fixed Geofence->iButtons link
+
+------------------------------------------------------------------------------
+  1.0.2.12 -> 1.0.2.13
+------------------------------------------------------------------------------
+- Added measurement units to I/O properties
+
+------------------------------------------------------------------------------
+  1.0.2.11 -> 1.0.2.12
+------------------------------------------------------------------------------
+- Added new sim status 'NO SIM'
+- Fixed Scenarios, 2nd label changed to No.2 
+
+------------------------------------------------------------------------------
+  1.0.2.9 -> 1.0.2.11
+------------------------------------------------------------------------------
+- Fixed Features>Scenario>iButton button.
+- Fixed Features>Trip>IOElements button.
+- Added tooltip for Data Aquisition modes min records saved.
+- Fixed application crash after unplugging device when connection is open.
+- Removed empty *Note lables from Feaetures>Scenarios.
+- Added accelerator keys for connect and disconnect buttons.
+
+------------------------------------------------------------------------------
+  1.0.2.8 -> 1.0.2.9
+------------------------------------------------------------------------------
+- Added possibility to edit IO elements in app.config
+
+------------------------------------------------------------------------------
+  1.0.2.7 -> 1.0.2.8
+------------------------------------------------------------------------------
+- Fixed "Sim card registering" status text disappears after entering 
+    "entering pin" status.
+- Fixed Scenarios->iButton and Trip>IOElements buttons, no they are disabled
+    while whole feature is disabled.
+- Add new IO Data Mode (17) parameter, size(1B).
+
+------------------------------------------------------------------------------
+  1.0.2.6 -> 1.0.2.7
+------------------------------------------------------------------------------
+- Fixed connect button, witch was falling inactive after fail to login.
+- Added possibility to change configurator version in app.config
+
+------------------------------------------------------------------------------
+  1.0.2.5 -> 1.0.2.6
+------------------------------------------------------------------------------
+- Fixed connect button, witch was falling inactive after device not found.
+
+------------------------------------------------------------------------------
+  1.0.2.4 -> 1.0.2.5
+------------------------------------------------------------------------------
+- Version check added.
+- Minor interface changes has been made.
+
+------------------------------------------------------------------------------
+  1.0.2.1 -> 1.0.2.4
+------------------------------------------------------------------------------
+- Security feature have been added.
+    * On connect requires login if device is secured.
+    * On connect requires unlock code if device is locked.
+- SimPin feature have been added.
+    * SimPin status updates automatically
+- Automatic search for device on connect
+    * Connecting to device do not require manual port selection
+    * If more than 1 device is connected, selection window appears
+
+------------------------------------------------------------------------------
+  1.0.2.0 -> 1.0.2.1
+------------------------------------------------------------------------------
+- Fixed IO available bytes size, now there are 84 bytes available when all 
+    IO are disabled.
+- iButtons number reduced from 64 to 50, now it is saving to flash properly.
+- GSM->SMS WeekTime title changed to SMS Data sending Settings.
+- Trip->Continuous distance counting option now disables when Trip Feature 
+    is disabled.
+
+------------------------------------------------------------------------------

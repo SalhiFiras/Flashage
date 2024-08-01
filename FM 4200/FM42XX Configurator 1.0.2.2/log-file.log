@@ -1,0 +1,8 @@
+[Header]
+2024-06-13 11:57:59,593 [1] INFO  Main - Starting: FM42XX Configurator, Version: 1.0.2.2
+2024-06-13 11:57:59,682 [1] DEBUG FM42XXConfigurator.MainForm - Creating MainForm.
+2024-06-13 11:57:59,887 [1] INFO  Protocol.SerialPort - Creating GpsSerialPort.
+2024-06-13 11:57:59,909 [1] INFO  Protocol.SerialPort - GpsSerialPort created.
+2024-06-13 11:58:00,106 [1] DEBUG FM42XXConfigurator.MainForm - MainForm created.
+2024-06-13 11:58:21,714 [1] DEBUG FM42XXConfigurator.MainForm - LoadProfileFromFile(). File: C:\Users\Firas\Desktop\Teltonika\FM 4200\Basic.xml
+[Footer]

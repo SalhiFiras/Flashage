@@ -1,0 +1,243 @@
+[2018-07-13 12:01:48.3045]
+2018-07-13 12:01:48.2265|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-07-13 12:01:48.3825|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-07-13 12:01:49.9849]
+2018-07-17 11:40:42.7754|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-07-17 11:40:42.9158|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-07-17 11:40:44.8268]
+2018-08-01 13:55:21.3073|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-08-01 13:55:21.4477|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-08-01 13:55:54.1986|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-08-01 13:56:10.3422|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Removed|
+2018-08-01 13:56:11.8170|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Inserted|
+[2018-08-01 13:57:32.1048]
+2018-08-07 17:35:27.2047|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-08-07 17:35:27.2983|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-08-07 17:35:30.8074]
+2018-08-09 16:30:44.3573|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-08-09 16:30:44.4197|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-08-09 16:30:44.4197|WARN|Teltonika.FirmwareUpdater.MainForm|Firmware file not found!|
+[2018-08-09 16:30:45.6751]
+2018-08-09 16:30:47.2445|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-08-09 16:30:47.2913|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-08-09 16:30:47.3069|WARN|Teltonika.FirmwareUpdater.MainForm|Firmware file not found!|
+[2018-08-09 16:30:51.0476]
+2018-09-07 11:09:01.8419|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-09-07 11:09:01.9519|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-09-07 11:09:59.4692|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-09-07 11:10:03.7355|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM3] Removed|
+[2018-09-07 11:31:05.1836]
+2018-09-07 11:41:46.8903|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-09-07 11:41:46.9503|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-09-07 11:41:58.5390]
+2018-09-07 11:52:45.5112|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-09-07 11:52:45.5756|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-09-07 11:53:58.9989|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-09-07 11:54:02.6919|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM3] Removed|
+[2018-09-07 12:18:08.8324]
+2018-09-12 10:26:53.5749|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-09-12 10:26:53.6769|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-09-12 10:27:45.3461|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-09-12 10:28:45.1284|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Removed|
+2018-09-12 10:28:47.9964|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Inserted|
+[2018-09-12 10:29:28.6906]
+2018-09-12 11:00:05.9999|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-09-12 11:00:06.1999|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-09-12 11:12:19.1071]
+2018-10-02 10:34:27.4109|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-02 10:34:27.6029|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-10-02 10:35:54.3469|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-10-02 10:36:53.2533|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Removed|
+2018-10-02 10:36:56.0294|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Inserted|
+[2018-10-02 10:41:35.8524]
+2018-10-02 10:44:09.8862|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-02 10:44:10.0343|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-10-02 10:44:59.3821|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-10-02 10:45:58.4965|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Removed|
+2018-10-02 10:46:01.1756|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Inserted|
+2018-10-02 10:59:24.6526|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-02 10:59:24.7486|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-10-02 11:00:09.5691|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-10-02 11:01:08.7405|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Removed|
+2018-10-02 11:01:11.5717|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Inserted|
+[2018-10-02 12:01:16.0358]
+[2018-10-02 12:01:20.3601]
+2018-10-05 11:16:13.4278|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-05 11:16:13.4838|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-10-05 11:33:15.1972|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-10-05 11:33:38.1886|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Removed|
+2018-10-05 11:33:39.5286|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Inserted|
+[2018-10-05 11:36:26.6562]
+2018-10-05 15:21:42.1842|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-05 15:21:42.2632|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2018-10-05 15:22:27.1098|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2018-10-05 15:22:50.1091|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Removed|
+2018-10-05 15:22:51.4532|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM12] Inserted|
+[2018-10-05 15:34:49.9813]
+2018-10-11 11:56:17.3720|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-10-11 11:56:17.4440|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-10-11 11:56:22.2733]
+2018-12-06 16:34:59.3001|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2018-12-06 16:34:59.3937|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2018-12-06 16:35:01.9521]
+2019-01-03 13:24:09.3490|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-01-03 13:24:09.4738|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-01-03 13:24:11.3410]
+2019-01-08 15:27:07.7212|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-01-08 15:27:07.8702|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-01-08 15:27:54.3878|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-01-08 15:28:17.2781|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Removed|
+2019-01-08 15:28:18.5562|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Inserted|
+[2019-01-08 15:30:17.9040]
+2019-01-17 13:18:08.8841|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-01-17 13:18:09.0261|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-01-17 13:21:11.3356|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-01-17 13:21:14.6338|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM16] Removed|
+2019-01-17 13:23:55.5060|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM16] Inserted|
+[2019-01-17 13:24:39.5185]
+2019-01-24 15:39:47.2503|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-01-24 15:39:47.3863|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-01-24 15:40:09.6046]
+2019-01-24 15:43:04.6746|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-01-24 15:43:04.7336|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-01-24 15:44:31.3006|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-01-24 15:44:34.9008|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM16] Removed|
+2019-01-24 15:46:23.4650|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM16] Inserted|
+[2019-01-24 15:47:42.7705]
+2019-03-25 12:03:29.8936|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-03-25 12:03:30.0106|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-03-25 12:04:14.6211|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-03-25 12:04:37.6284|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Removed|
+2019-03-25 12:04:38.8865|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Inserted|
+[2019-03-25 12:04:50.6412]
+2019-04-15 10:06:30.2205|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-04-15 10:06:30.3095|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-04-15 10:07:31.0090|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-04-15 10:08:29.2123|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Removed|
+2019-04-15 10:08:32.4715|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM6] Inserted|
+[2019-04-15 10:08:36.8197]
+2019-04-15 10:57:29.9045|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-04-15 10:57:30.0945|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-04-15 11:02:17.0859]
+2019-05-14 16:18:07.4231|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-05-14 16:18:07.5479|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-05-14 16:18:44.8405|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-05-14 16:19:01.9351|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM22] Removed|
+2019-05-14 16:19:03.1973|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM22] Inserted|
+[2019-05-14 16:20:04.3620]
+2019-06-04 14:35:00.8024|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-06-04 14:35:00.9384|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-06-04 14:35:44.8169|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-06-04 14:35:48.0861|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM18] Removed|
+2019-06-04 14:37:59.4556|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM18] Inserted|
+[2019-06-04 15:36:24.7201]
+2019-09-11 11:23:28.4488|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-09-11 11:23:28.5228|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-09-11 11:24:12.6973|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-09-11 11:24:35.6906|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM8] Removed|
+2019-09-11 11:25:08.0295|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM8] Inserted|
+[2019-09-11 11:26:37.9326]
+2019-10-15 11:53:49.9364|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-10-15 11:53:50.0024|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-10-15 11:53:50.0024|WARN|Teltonika.FirmwareUpdater.MainForm|Firmware file not found!|
+[2019-10-15 11:54:12.3574]
+2019-10-15 11:54:21.0064|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-10-15 11:54:21.0774|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-10-15 11:56:01.9464|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-10-15 11:56:24.9384|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Removed|
+2019-10-15 11:56:26.2074|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM20] Inserted|
+[2019-10-15 12:25:40.1484]
+2019-10-22 14:29:46.0135|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-10-22 14:29:46.1745|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-10-22 14:31:27.4415|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-10-22 14:31:31.0945|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Removed|
+2019-10-22 14:33:39.9405|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Inserted|
+[2019-10-22 14:34:01.3255]
+2019-10-22 14:34:02.6145|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-10-22 14:34:02.6865|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-10-22 14:35:17.1525|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2019-10-22 14:35:20.4225|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Removed|
+2019-10-22 14:37:29.9445|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Inserted|
+[2019-10-22 14:37:50.1075]
+2019-11-11 15:23:12.2613|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-11-11 15:23:12.3723|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-11-11 15:23:53.3604]
+2019-11-11 15:23:56.4307|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-11-11 15:23:56.5317|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-11-11 15:24:56.3877|FATAL||Unhandled exception: System.ObjectDisposedException: Safe handle has been closed
+   at System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   at System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   at Microsoft.Win32.UnsafeNativeMethods.GetOverlappedResult(SafeFileHandle hFile, NativeOverlapped* lpOverlapped, Int32& lpNumberOfBytesTransferred, Boolean bWait)
+   at System.IO.Ports.SerialStream.EventLoopRunner.WaitForCommEvent()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()|
+2019-11-11 15:26:18.1819|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-11-11 15:26:18.2439|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-11-11 15:26:21.1902]
+2019-11-11 15:32:31.7263|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-11-11 15:32:31.8003|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2019-11-11 15:32:48.2599|FATAL||Unhandled exception: System.ObjectDisposedException: Safe handle has been closed
+   at System.Runtime.InteropServices.SafeHandle.DangerousAddRef(Boolean& success)
+   at System.StubHelpers.StubHelpers.SafeHandleAddRef(SafeHandle pHandle, Boolean& success)
+   at Microsoft.Win32.UnsafeNativeMethods.GetOverlappedResult(SafeFileHandle hFile, NativeOverlapped* lpOverlapped, Int32& lpNumberOfBytesTransferred, Boolean bWait)
+   at System.IO.Ports.SerialStream.EventLoopRunner.WaitForCommEvent()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()|
+2019-11-14 15:08:58.1982|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-11-14 15:08:58.3502|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-11-14 15:09:01.4482]
+2019-12-05 11:11:29.9799|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2019-12-05 11:11:30.0939|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2019-12-05 11:11:32.9892]
+2020-01-20 17:00:07.9514|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-20 17:00:08.1124|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-20 17:00:10.4086]
+2020-01-21 11:25:26.5524|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-21 11:25:26.6344|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-21 11:25:30.6788]
+2020-01-29 09:16:00.4431|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-29 09:16:00.6031|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-29 10:51:32.5739]
+2020-01-29 10:56:04.7319|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-29 10:56:04.8009|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-29 10:56:18.1279]
+2020-01-29 10:59:46.5349|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-29 10:59:46.5979|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-29 10:59:48.5119]
+2020-01-29 10:59:55.7239|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-01-29 10:59:55.8359|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-01-29 11:00:08.5599]
+2020-05-05 15:24:52.0667|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-05 15:24:52.1767|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-05-05 15:24:54.1650]
+2020-05-05 15:24:59.6790|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-05 15:24:59.7730|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-05-05 15:25:00.8954]
+2020-05-05 15:25:38.3242|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-05 15:25:38.4206|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-05-05 15:25:40.1964]
+2020-05-14 16:27:24.7176|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-14 16:27:24.8220|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2020-05-14 16:28:18.0044|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2020-05-14 16:28:22.3192|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Removed|
+2020-05-14 16:30:19.4127|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Inserted|
+[2020-05-14 16:30:23.7381]
+2020-05-14 16:30:30.5413|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-14 16:30:30.6385|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+[2020-05-14 16:30:31.8797]
+2020-05-14 16:30:39.4469|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2020-05-14 16:30:39.5469|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2020-05-14 16:31:26.7501|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2020-05-14 16:31:30.4010|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Removed|
+2020-05-14 16:35:13.7440|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM17] Inserted|
+[2020-05-14 16:35:22.4916]
+2023-06-01 14:16:21.2168|DEBUG|Teltonika.FirmwareUpdater.MainForm|Creating.|
+2023-06-01 14:16:21.2758|DEBUG|Teltonika.FirmwareUpdater.MainForm|Created.|
+2023-06-01 14:17:10.9616|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|Start|
+2023-06-01 14:17:33.8228|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM15] Removed|
+2023-06-01 14:17:35.2954|INFO|Teltonika.FirmwareUpdater.Operations.WaitForUpdateCompletionOperation|[COM15] Inserted|
+[2023-06-01 14:17:51.2079]
